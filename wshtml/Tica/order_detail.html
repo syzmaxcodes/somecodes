@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta charset="utf-8">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/data/assets/bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/statics/css/ectouch.css" />
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/css/style.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/statics/css/search.css" />
+    <script type="text/javascript" >var tpl = '/themes/default';</script>
+
+    <!-- 新增样式表 -->
+    <link rel="stylesheet" href="themes/default/css/styleNew.css">
+    <style type="text/css">
+        .btn-submit{ background: #007AFF; border: 1px solid #007AFF; }
+    </style>
+    <!-- 新增样式表 -->
+</head>
+
+<body style="max-width:640px;">
+<div id="loading"><img src="http://www.ticaglobal.cn/themes/default/statics/img/loading.gif" /></div>
+<div id="demo-2" style="margin-top: 0;color:#666; width: 100%; box-sizing:border-box; padding:0 3%;height: 2.5rem; z-index: 200; background:rgba(0,0,0,.78);position: fixed;text-align: center; border-bottom: 1px solid #393939; ">
+    <marquee scrollamount=3; style=" line-height: 2.5rem; font-size: 1.2rem;color:#666;  ">
+        <span style="color: #fff;">宋芳渔具店</span>您好，您共有<span style="color: #ffd200;">10000</span>积点，可抵扣<span style="color: #ffd200;">¥100.00</span>元
+    </marquee>
+</div>
+<div class="con m-b7 new-maxbox" style="margin-top:2.5rem;">
+    <div class="ect-bg jidianHeader">
+        <header class="ect-header ect-margin-tb ect-margin-lr text-center ect-bg icon-write">
+            <a href=" javascript:history.go(-1) " class="pull-left ect-icon ect-icon1 ect-icon-history"></a>
+            <span>订单详情</span>
+            <a href="javascript:;" onClick="openMune()"  id="openMune" class="pull-right ect-icon ect-icon1 ect-icon-mune ect-icon-navMenu"></a>
+            <!--菜单切换图标效果 脚本在最下面-->
+        </header>
+        <nav class="ect-nav ect-nav-list" style="display:none;">
+            <ul class="ect-diaplay-box text-center">
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=index&a=index&u=441"><i class="ect-icon ect-icon-home"></i>首页</a></li>
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=category&a=top_all&u=441"><i class="ect-icon ect-icon-cate"></i>分类</a></li>
+                <li class="ect-box-flex"><a href="javascript:;" class="j-search-input"><i class="ect-icon ect-icon-search"></i>搜索</a></li>
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=flow&a=cart&u=441"><i class="ect-icon ect-icon-flow"></i>购物车</a></li>
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=user&a=index&u=441"><i class="ect-icon ect-icon-user"></i>个人中心</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="con">
+        <!-- 订单支付状态 -->
+        <div class="pay_state pay_state_detail">
+            <h1>等待付款</h1>
+            <p>您的订单已提交，请在<span>01</span>时<span>59</span>分<span>59</span>秒内完成支付，超时订单自动取消</p>
+        </div>
+        <div class="express_info">
+            <p>收货人：周杰伦</p>
+            <p>手机号：13400000000</p>
+            <p>收货地址：浙江省宁波市鄞州区首南街道罗蒙环球城欢乐颂1幢505室</p>
+            <p class="pay_money">需付款：<span>¥1000.00</span></p>
+        </div>
+    </div>
+
+    <!-- 商品列表 -->
+    <section class="prolist_new order_detail_prolist">
+        <ul>
+            <li>
+                <a href="###"><img src="http://www.ticaglobal.cn/data/attached/images/201710/goods_img/180_G_1507592485888.jpg" title=""></a>
+                <article>
+                    <h4>
+                        <a href="###">迪佳水纹粹四代台钓鲤竿迪佳水纹粹四代台钓鲤竿迪佳水纹粹四代台钓鲤竿迪佳水纹粹四代台钓鲤竿</a>
+                        <strong class="ect-colory">¥1055.00
+                            <br>
+                            <!--<img src="themes/default/img/jxs_icon.png">-->
+                        </strong>
+                    </h4>
+                    <h5>尺寸:5米
+                        <small>×1000</small>
+                    </h5>
+                    <!-- 消费者可见 -->
+                    <!--<span class="quan_y">用券</span>-->
+                </article>
+            </li>
+            <li>
+                <a href="###"><img src="http://www.ticaglobal.cn/data/attached/images/201708/goods_img/25_G_1502415956880.jpg" title=""></a>
+                <article>
+                    <h4>
+                        <a href="###">迪佳水纹粹四代台钓鲤竿迪佳水纹粹四代台钓鲤竿迪佳水纹粹四代台钓鲤竿迪佳水纹粹四代台钓鲤竿</a>
+                        <strong class="ect-colory">¥1055.00
+                            <br>
+                            <!--<img src="themes/default/img/jxs_icon.png">-->
+                        </strong>
+                    </h4>
+                    <h5>尺寸:5.4米
+                        <small>×1</small>
+                    </h5>
+                    <!-- 消费者可见 -->
+                    <!--<span class="quan_y">用券</span>-->
+                </article>
+            </li>
+            <li>
+                <a href="###"><img src="http://www.ticaglobal.cn/data/attached/images/201708/thumb_img/94_thumb_G_1503700363125.jpg" title=""></a>
+                <article>
+                    <h4>
+                        <a href="###">消费者商城 - 用券</a>
+                        <strong class="ect-colory">¥1055.00
+                            <br>
+                            <!--<img src="themes/default/img/jxs_icon.png">-->
+                        </strong>
+                    </h4>
+                    <h5>尺寸:5.4米
+                        <small>×1</small>
+                    </h5>
+                    <!-- 消费者可见 -->
+                    <span class="quan_y">用券</span>
+                </article>
+            </li>
+        </ul>
+    </section>
+    <div class="clear"></div>
+
+    <section class="ect-margin-tb ect-margin-bottom0 ect-padding-lr checkout-select checkout-pro-list total_order_detail" style="border: none;">
+        <div class="ect-padding-tb text-right" id="ECS_ORDERTOTAL">
+            <table width="100%"  style="line-height: 3rem;">
+                <tr>
+                    <td align="left">商品总价</td>
+                    <td align="right">¥2698.00</td>
+                </tr>
+                <!--<tr>-->
+                <!--<td align="left">积点抵扣</td>-->
+                <!--<td align="right">-¥500.00</td>-->
+                <!--</tr>-->
+                <tr>
+                    <td align="left">运费</td>
+                    <td align="right">¥0.00</td>
+                </tr>
+                <tr>
+                    <td align="left">已优惠</td>
+                    <td align="right">-¥500.00</td>
+                </tr>
+                <tr>
+                    <td align="left">需付款</td>
+                    <td align="right"><b>¥1000.00</b></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+    <section class="order_detail_else">
+        订单号：2018020216151760797<br>
+        支付方式：支付宝<br>
+        快递方式：申通快递<br>
+        创建时间：2018-02-02 16:15:17
+    </section>
+
+
+    <div class="con">
+        <a href="tel:0574-86111234" class="service_tel" >
+            <span>客服电话</span>
+            <i class="iconfont icon-jiantou tf-180 jian-top"></i>
+            <cite>
+                0574-86111234<br><em>【转234】周一至周五 7:30-17:00 18:30-22:00</em>
+            </cite>
+        </a>
+        <div class="weixin_code">
+            <img src="http://www.ticaglobal.cn/themes/default/statics/img/ewm.png">
+            <p>长按关注【TICA羚祐迪佳渔具】<br>解锁更多信息</p>
+        </div>
+    </div>
+
+    <div class="foot_btns">
+        <a href="#">取消订单</a>
+        <a href="#">立即付款</a>
+    </div>
+
+
+
+    <div class="search-div ts-3">
+        <section class="search">
+            <form action="/index.php?m=default&c=category&a=index&u=0&id=1" method="post">
+                <div class="text-all dis-box j-text-all">
+                    <a class="a-icon-back j-close-search" href="###"><i class="iconfont icon-jiantou is-left-font"></i></a>
+                    <div class="box-flex input-text">
+                        <input class="j-input-text" type="text" name="name" placeholder="请输入搜索关键词！" id="newinput" autofocus="autofocus"/ >
+                        <i class="iconfont icon-guanbi2 is-null j-is-null"></i>
+                    </div>
+                    <button type="submit" class="btn-submit">搜索</button>
+                </div>
+            </form>
+        </section>
+        <section class="search-con">
+            <div class="swiper-scroll history-search">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>
+                            <label class="fl">热门搜索</label>
+                        </p>
+                        <ul class="hot-search a-text-more">
+                        </ul>
+                        <p class="hos-search">
+                            <label class="fl">最近搜索</label>
+                            <span class="fr" onclick="javascript:clearHistroy();"><i class="iconfont icon-xiao10 is-xiao10 jian-top fr"></i></span>
+                        </p>
+
+                        <ul class="hot-search a-text-more a-text-one" id="search_histroy">
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+        <footer class="close-search j-close-search">
+            点击关闭
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        //设置cookie
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+        function clearHistroy(){
+            setCookie('ECS[keywords]', '', -1);
+            document.getElementById("search_histroy").style.visibility = "hidden";
+        }
+    </script>		<div class="div-messages"></div>
+
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/swiper.min.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/ectouch.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.json.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/jquery-ui-1.10.1.custom.min.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/common.js"></script>
+
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/echo.min.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/template.js"></script>
+
+    <script type="text/javascript">
+        /* 菜单切换图标效果 */
+        function openMune() {
+            var headeropenMune = $("#openMune");
+            if ($(".ect-nav").is(":visible")) {
+                $(".ect-nav").hide();
+                headeropenMune.removeClass('ect-icon-navMenuOpen');
+            } else {
+                $(".ect-nav").show();
+                headeropenMune.addClass('ect-icon-navMenuOpen');
+            }
+        }
+    </script>
+
+</div>
+</body>
+</html>

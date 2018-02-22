@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+    <title>迪佳百川俱乐部</title>
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/data/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/statics/css/ectouch.css" />
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/css/style.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/statics/css/search.css" />
+    <script type="text/javascript" >var tpl = 'http://www.ticaglobal.cn/themes/default';</script>
+    <!-- 新增样式表 -->
+    <link rel="stylesheet" href="themes/default/css/styleNew.css">
+    <!-- 新增样式表 -->
+    <style type="text/css">
+        .flow-set-adr{ border-bottom: none; }
+        .flow-consignee-list .flow-have-adr{ border-bottom: 1px solid #F6F6F9; }
+        .ect-colory{ float: right; font-size: 1.5rem; color: #333 !important;}
+        .btn-submit,.btn-submit:active, .btn-submit:hover{border-radius: 0; background: #007AFF; border: 1px solid #007AFF;}
+        .filter-btn{ padding:0; background: #fff; border-top:none; }
+        .flow-consignee-list ul li{ border-bottom: none; }
+        .flow-set-adr .fr{ margin-top: -0.3rem; }
+        .padding-all{ padding: 1.3rem; }
+        .flow-consignee-list .flow-have-adr{ padding: 1.8rem 1.3rem; }
+        .select-three .ect-select label{ line-height: normal; }
+        .flow-set-adr .ect-select label span{ font-size: 1.3rem; margin-top: 0; }
+        .flow-consignee-list .flow-checkout-adr a{ font-size: 1.3rem; margin-left: 1.2rem; }
+        .select-three .ect-select i{ width: 1.8rem; height: 1.8rem; margin-top: 0.1rem; }
+        .flow-consignee-list .flow-checkout-adr a i{ font-size: 1.6rem; }
+    </style>
+</head>
+
+<body style="max-width:640px;">
+<div id="loading"><img src="http://www.ticaglobal.cn/themes/default/statics/img/loading.gif" /></div>
+<div id="demo-2" style="margin-top: 0;color:#666; width: 100%; box-sizing:border-box; padding:0 3%;height: 2.5rem; z-index: 200; background:rgba(0,0,0,.78);position: fixed;text-align: center; border-bottom: 1px solid #393939; ">
+    <marquee scrollamount=3; style=" line-height: 2.5rem; font-size: 1.2rem;color:#666;  ">
+        <span style="color: #fff;">宋芳渔具店</span>您好，您共有<span style="color: #ffd200;">10000</span>积点，可抵扣<span style="color: #ffd200;">¥100.00</span>元
+    </marquee>
+</div>
+<div class="con m-b7 new-maxbox" style="margin-top: 2.5rem;" >
+    <div class="ect-bg jidianHeader">
+        <header class="ect-header ect-margin-tb ect-margin-lr text-center ect-bg icon-write">
+            <a href=" javascript:history.go(-1) " class="pull-left ect-icon ect-icon1 ect-icon-history"></a>
+            <span>管理收货地址</span>
+            <a href="javascript:;" onClick="openMune()"  id="openMune" class="pull-right ect-icon ect-icon1 ect-icon-mune ect-icon-navMenu"></a>
+            <!--菜单切换图标效果 脚本在最下面-->
+        </header>
+        <nav class="ect-nav ect-nav-list" style="display:none;">
+            <ul class="ect-diaplay-box text-center">
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=index&a=index&u=441"><i class="ect-icon ect-icon-home"></i>首页</a></li>
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=category&a=top_all&u=441"><i class="ect-icon ect-icon-cate"></i>分类</a></li>
+                <li class="ect-box-flex"><a href="javascript:;" class="j-search-input"><i class="ect-icon ect-icon-search"></i>搜索</a></li>
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=flow&a=cart&u=441"><i class="ect-icon ect-icon-flow"></i>购物车</a></li>
+                <li class="ect-box-flex"><a href="/index.php?m=default&c=user&a=index&u=441"><i class="ect-icon ect-icon-user"></i>个人中心</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ********************************** 收货地址 Start （样式统一添加在此处） ***************************************  -->
+    <section class="flow-consignee-list j-get-consignee-one select-three" id="J_ItemList">
+        <ul>
+            <li class="flow-checkout-adr m-top08 single_item ">
+                <div class="flow-have-adr padding-all">
+                    <p class="f-h-adr-title">
+                        <label>哈哈</label><span class="ect-colory">13500000000</span></p>
+                    <p class="f-h-adr-con t-remark m-top04">甘肃白银平川区 哈哈</p>
+                </div>
+                <div class="flow-set-adr of-hidden padding-all ">
+                    <div class="ect-select fl">
+                        <label class="dis-box  " onclick="flow_edit_address_info(48)">
+                            <i class="select-btn"></i>
+                            <span class="box-flex">设为默认</span>
+                        </label>
+                    </div>
+                    <div class="fr"><a href="user_address_edit.html"><i class="iconfont icon-bianji"></i>编辑</a><a href="/index.php?m=default&amp;c=flow&amp;a=drop_consignee&amp;id=48&amp;u=441"><i class="iconfont icon-xiao10"></i>删除</a></div>
+                </div>
+            </li>
+            <li class="flow-checkout-adr m-top08 single_item " id="more_element_2">
+                <div class="flow-have-adr padding-all">
+                    <p class="f-h-adr-title">
+                        <label>oltra</label><span class="ect-colory">13699999999</span></p>
+                    <p class="f-h-adr-con t-remark m-top04">广东潮州潮安县 你猜</p>
+                </div>
+                <div class="flow-set-adr of-hidden padding-all ">
+                    <div class="ect-select fl">
+                        <label class="dis-box  active" onclick="flow_edit_address_info(50)">
+                            <i class="select-btn"></i>
+                            <span class="box-flex">设为默认</span>
+                        </label>
+                    </div>
+                    <div class="fr"><a href="user_address_edit.html"><i class="iconfont icon-bianji"></i>编辑</a><a href="/index.php?m=default&amp;c=flow&amp;a=drop_consignee&amp;id=50&amp;u=441"><i class="iconfont icon-xiao10"></i>删除</a></div>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+    <!-- ********************************** 收货地址 End ***************************************  -->
+
+
+    <div class="filter-btn dis-box">
+        <a href="user_add_address.html" type="button" class="btn-submit box-flex n-iphone5-top1 j-goods-attr j-show-div">新增收货地址</a>
+    </div>
+
+</div>
+<div class="search-div ts-3">
+    <section class="search">
+        <form action="/index.php?m=default&c=category&a=index&u=441" method="post">
+            <div class="text-all dis-box j-text-all">
+                <a class="a-icon-back j-close-search" href="javascript:history.go(-1)"><i class="iconfont icon-jiantou is-left-font"></i></a>
+                <div class="box-flex input-text">
+                    <input class="j-input-text" type="text" name="name" placeholder="请输入搜索关键词！" id="newinput" autofocus="autofocus"/ >
+                    <i class="iconfont icon-guanbi2 is-null j-is-null"></i>
+                </div>
+                <button type="submit" class="btn-submit">搜索</button>
+            </div>
+        </form>
+    </section>
+    <section class="search-con">
+        <div class="swiper-scroll history-search">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p>
+                        <label class="fl">热门搜索</label>
+                    </p>
+                    <ul class="hot-search a-text-more">
+                    </ul>
+                    <p class="hos-search">
+                        <label class="fl">最近搜索</label>
+                        <span class="fr" onclick="javascript:clearHistroy();"><i class="iconfont icon-xiao10 is-xiao10 jian-top fr"></i></span>
+                    </p>
+
+                    <ul class="hot-search a-text-more a-text-one" id="search_histroy">
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <footer class="close-search j-close-search">
+        点击关闭
+    </footer>
+</div>
+
+<script type="text/javascript">
+    //设置cookie
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires="+d.toUTCString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+    function clearHistroy(){
+        setCookie('ECS[keywords]', '', -1);
+        document.getElementById("search_histroy").style.visibility = "hidden";
+    }
+</script><script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.min.js" ></script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.json.js" ></script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/common.js"></script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.more.js"></script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/utils.js" ></script>
+<script src="http://www.ticaglobal.cn/data/assets/swiper/js/jquery.swiper.min.js"></script>
+<script src="http://www.ticaglobal.cn/themes/default/js/ectouch.js"></script>
+<script src="http://www.ticaglobal.cn/themes/default/js/simple-inheritance.min.js"></script>
+<script src="http://www.ticaglobal.cn/themes/default/js/code-photoswipe-1.0.11.min.js"></script>
+<script src="http://www.ticaglobal.cn/data/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://www.ticaglobal.cn/themes/default/js/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/validform.js" ></script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/ectouch.js"></script>
+<script language="javascript">
+    var handler = function(e) { //禁止浏览器默认行为
+        e.preventDefault();
+    };
+    /*banner滚动图片*/
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        loop: true,
+        autoplay : 2000
+    });
+    /*弹出评论层并隐藏其他层*/
+    function openSearch(){
+        document.addEventListener("touchmove", handler, false);
+        $("body").addClass("show-search-div");
+        $(".search-div").css("z-index","4999");
+        $("input[name='keywords']").focus();
+    }
+</script>
+<script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.more.js"></script>
+<!--<script type="text/javascript">-->
+    <!--get_asynclist('http://www.ticaglobal.cn/index.php?m=default&c=flow&a=consignee_list', 'http://www.ticaglobal.cn/themes/default/images/loader.gif');-->
+<!--</script>-->
+<script>
+
+    /*设置默认收货地址*/
+    function flow_edit_address_info(address_id) {
+        var url = 'http://www.ticaglobal.cn/index.php?m=default&c=flow&a=edit_address_info';
+        $.get(url, {'id':address_id}, function(data){
+            if (1 == data.status) {
+                window.location.href = 'index.php?m=default&c=flow&a=checkout';
+            }
+        }, 'json');
+        return false;
+
+    }
+
+<!-- ********************************** 服务位置被拒绝问题:注释以下代码 Start ***************************************  -->
+
+
+//    function getLocation(){
+//        var options={
+//            enableHighAccuracy:true,
+//            maximumAge:1000
+//        }
+//        if(navigator.geolocation){
+//            navigator.geolocation.getCurrentPosition(onSuccess,onError,options);
+//        }else{
+//            onError();
+//        }
+//    }
+    //成功时
+//    function onSuccess(position){
+//        //返回用户位置
+//        var longitude =position.coords.longitude; //经度
+//        var latitude = position.coords.latitude;//纬度
+//
+//        $.post('/index.php?m=default&c=user&a=positions&u=441', {
+//            lng: longitude,
+//            lat: latitude
+//        }, function (data) {
+//            if (data.error == 0) {
+//                window.location.href = data.url;
+//            } else {
+//                alert(data.message);
+//            }
+//        }, 'json');
+//    }
+    //失败时
+//    function onError(error){
+//        switch(error.code){
+//            case 1:
+//                alert("位置服务被拒绝");
+//                break;
+//
+//
+//            case 2:
+//                alert("暂时获取不到位置信息");
+//                break;
+//
+//
+//            case 3:
+//                alert("获取信息超时");
+//                break;
+//
+//
+//            case 4:
+//                alert("未知错误");
+//                break;
+//        }
+//
+//
+//    }
+//
+//    getLocation();
+<!-- ********************************** 服务位置被拒绝问题:注释以上代码 End ***************************************  -->
+
+</script>
+
+<script type="text/javascript">
+    /* 菜单切换图标效果 */
+    function openMune() {
+        var headeropenMune = $("#openMune");
+        if ($(".ect-nav").is(":visible")) {
+            $(".ect-nav").hide();
+            headeropenMune.removeClass('ect-icon-navMenuOpen');
+        } else {
+            $(".ect-nav").show();
+            headeropenMune.addClass('ect-icon-navMenuOpen');
+        }
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>分享系统绑定商城</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style type="text/css">
+        /* common */
+        html{font-size:20px}@media only screen and (min-width:400px){html{font-size:21.33px!important}}@media only screen and (min-width:414px){html{font-size:22.08px!important}}@media only screen and (min-width:480px){html{font-size:25.6px!important}}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}a{background-color:transparent}a:active,a:hover{outline:0}b,strong{font-weight:700}h1{font-size:2em;margin:.67em 0}small{font-size:80%}img{border:0}hr{box-sizing:content-box;height:0}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none; padding: 0; margin: 0;}body{font-family:"Helvetica Neue",Helvetica,sans-serif;font-size:.85rem;line-height:1.5;color:#333;background:#eee;overflow:hidden}a,button,input,select,textarea{outline:0}p{margin:1em 0}a{color:#0894ec;text-decoration:none;-webkit-tap-highlight-color:transparent}a:active{color:#0a8ddf}ul,li{ list-style: none; }
+        /* this page  */
+        body{ background: #fff; padding-bottom: 70px; }
+        .box-flex{ display: flex; flex-wrap: nowrap;/* 不换行 */ flex-direction: row; /* 水平 */ justify-content: center; /* 居中 */ align-items:center; /* 垂直 */ align-content: flex-start;  }
+        .bindIcon{ text-align: center; padding: 1rem 0 0.5rem; line-height: 1rem; }
+        .bindIcon img{ width: 45px; vertical-align: middle; }
+        .bindIcon span{ display: inline-block; color: #fff; font-size: .6rem;  }
+        .bindIcon span:nth-child(2) { margin: 0 20px; }
+        .bindIcon span:nth-child(2) img{ width: 25px; }
+        /* 表单 */
+        .bindMain{ width: 90%; box-sizing: border-box; margin: 1.1rem auto 0; overflow: hidden;  padding-bottom: 1rem; font-size: .7rem; }
+        .bindMain li{ border: 1px solid #ccc; margin-bottom: 0.5rem;  }
+        .bindMain li span{ display: inline-block; width: 65%; vertical-align: middle; padding: 0; color: #333;  }
+        .bindMain li span:first-child{ width:28%; text-align: left; padding-left: 5%;   }
+        .bindMain li input{ width: 100%; height: 1.9rem; border:none; background: none; }
+        /* 区域分割线 */
+        .bgLine{ width: 100%; height: 10px; background: #F6F6F9; }
+        /* 您的信息 */
+        .bindForm{ width: 90%; box-sizing: border-box; margin: 0 auto; overflow: hidden;  padding-bottom: 0.5rem;  border-radius:2px; }
+        .bindForm h1{ font-size: .7rem; box-sizing: border-box; padding: 5% 0 4% 0; margin: 0; font-weight: bold;  color: #666; }
+        .bindForm section{ width: 100%;  font-size: .65rem; }
+        .bindForm section li{ border-bottom: 1px solid #f6f6f6; padding: 3% 0; }
+        .bindForm section li span{ display: inline-block; width: 67%; vertical-align: middle; padding: 0; color: #888; text-align: right;  }
+        .bindForm section li span:first-child{ width:31%; text-align: left;  }
+        .bindForm section li:last-child{ border-bottom: none; }
+        /* 提交按钮 */
+        .bindSubmit{ text-align: center; position: fixed; left: 0; bottom: 0; width: 100%; background: #fff; }
+        button[type=submit]{ width: 92%; height: 1.8rem; margin: 0.8rem auto; background: #007AFF; color: #fff; border: none; display: inline-block; }
+        .bindForm button.bindY{ background: #aaa; box-shadow: 0 3px 12px rgba(170,170,170,.5); }
+        /* 表单验证信息 */
+        .bindMain li.notice{ border: none; color: #888; font-size: 85%; margin-top: -0.3rem; }
+        .bindMain li.notice img{ width: 10px; vertical-align: middle; }
+        .bindMain li.notice small{ color: #e00; font-size: 100%; }
+        .bindMain li.notice i{ color: #008000; font-style: normal; }
+    </style>
+
+</head>
+<body>
+    <div class="bindIcon box-flex">
+        <span class="box-item"><img src="img/logo_fx.png" alt="分享系统"></span>
+                <span class="box-item">
+                    <img src="img/arrow_y.png" alt="绑定">
+                </span>
+        <span class="box-item"><img src="img/logo_sc.png" alt="商城"></span>
+    </div>
+    <form action="javascript:regSubmit()" name="bindForm" id="bindForm" method="post">
+        <div class="bindMain">
+            <ul>
+                <li>
+                    <span>帐号</span>
+                    <span>
+                        <input type="text" id="id_check" placeholder="创建经销商商城帐号">
+                    </span>
+                </li>
+                <li class="notice">
+                    <img src="img/dot.jpg">
+                    必须为数字、小写英文、大写英文的组合，且字数不少于6个
+                </li>
+                <li>
+                    <span>密码</span>
+                    <span>
+                        <input type="text" id="pass_check" placeholder="设置登录密码">
+                    </span>
+                </li>
+                <li class="notice">
+                    <img src="img/dot.jpg">
+                    仅限数字和英文，且字数不少于6个
+                </li>
+                <li>
+                    <span>重复密码</span>
+                    <span>
+                        <input type="text" id="pass_check2" placeholder="请重复您的密码" >
+                    </span>
+                </li>
+                <li class="notice"></li>
+            </ul>
+        </div>
+        <div class="bgLine"></div>
+        <div class="bindForm">
+            <h1>您的信息</h1>
+            <section>
+                <ul>
+                    <li>
+                        <span>企业名称</span>
+                        <span>不同凡响网络科技公司</span>
+                    </li>
+                    <li>
+                        <span>商户名称</span>
+                        <span>不同凡响渔具</span>
+                    </li>
+                    <li>
+                        <span>所属营销中心</span>
+                        <span>浙江</span>
+                    </li>
+                    <li>
+                        <span>地址</span>
+                        <span>浙江 宁波 江东区 宁波研发园B幢1203室</span>
+                    </li>
+                    <li>
+                        <span>姓名</span>
+                        <span>某某某</span>
+                    </li>
+                    <li>
+                        <span>手机号</span>
+                        <span>15957493984</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="bgLine"></div>
+        <div class="bindSubmit">
+            <button type="submit" id="bindSubmit">提交申请</button>
+        </div>
+    </form>
+
+    <!--  表单正则验证 -->
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+        //账号验证
+        function id_check() {
+            var reg = "^(?=.*[0-9].*)(?=.*[A-Z].*)(?=.*[a-z].*).{6,}$";
+            // 去除所有空格
+            var id_check = $("#id_check").val().replace(/\s+/g, "");
+            if (id_check.search(reg) == -1) {
+                $("#id_check").parents('li').next().html("<small>必须为数字、小写英文、大写英文的组合，且字数不少于6个</small>");
+                return false;
+            } else {
+              //  var reg=/[`~!@#\$%\^&\*()-\_]+/g ;
+                var reg= new RegExp("[ ,\\`,\\~,\\!,\\@,#,\$,\\%,\\^,\\+,\\*,\\&,\\\\,\\/,\\?,\\|,\\:,\\.,\\<,\\>,\\{,\\},\\(,\\),\\'',\\;,\\=,\\-,\\_,\\[,\\],\"]") ;
+                if(reg.test(id_check))
+                {
+                    $("#id_check").parents('li').next().html("<small>必须为数字、小写英文、大写英文的组合，且字数不少于6个</small>");
+                    return false;
+                }else{
+                    $("#id_check").parents('li').next().html("<i>账号可用！</i>");
+                    return true;
+                }
+            }
+        }
+
+        //密码验证
+        function pass_check() {
+            var pass = "^[0-9a-zA-Z]{6,}$";
+            // 去除所有空格
+            var pass_check = $("#pass_check").val().replace(/\s+/g, "");
+            if (pass_check.search(pass) == -1) {
+                $("#pass_check").parents('li').next().html("<small>仅限数字和英文，且字数不少于6个</small>");
+                return false;
+            } else {
+                $("#pass_check").parents('li').next().html("<i>密码设置成功！</i>");
+                return true;
+            }
+        }
+        function pass_check2() {
+            //去除所有空格
+            var pass_check = $("#pass_check").val().replace(/\s+/g, "");
+            var pass_check2 = $("#pass_check2").val().replace(/\s+/g, "");
+            if ((pass_check2 == pass_check)&&(pass_check2!=="")&&(pass_check2.length>5)) {
+                $("#pass_check2").parents('li').next().html("<i>密码确认成功！</i>");
+                return true;
+            } else {
+                $("#pass_check2").parents('li').next().html("<small>请输入与上面相同的密码，且字数不少于6个</small>");
+                return false;
+            }
+        }
+
+        $(function(){
+            $("#id_check").blur(id_check);
+            $("#pass_check").blur(pass_check);
+            $("#pass_check2").blur(pass_check2);
+        });
+
+        // 提交表单
+        function regSubmit() {
+            // 表单为空时
+            if($("#id_check").val() == "" || $("#pass_check").val() == "" || $("#pass_check2").val() == "") {
+                alert("注册信息还没填写完整哦~");
+                return false;
+            }
+            // 表单不符合正则
+            else if(!(id_check() && pass_check() && pass_check2())) {
+                return false;
+            }
+            // 表单符合正则
+            else {
+                alert("提交成功！");
+                return true;
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!-- $Id: users_list.htm 17053 2010-03-15 06:50:26Z sxc_shop $ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TICA管理中心</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="http://www.mtangmpin.com/admin/styles/general.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.mtangmpin.com/admin/styles/main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://www.mtangmpin.com/data/assets/js/transport.js"></script>
+    <script type="text/javascript" src="http://www.mtangmpin.com/admin/js/common.js"></script>
+    <script type="text/javascript" src="http://www.mtangmpin.com/data/assets/js/jquery.min.js" ></script>
+
+    <!--***************  新增加样式 Start ***************-->
+    <style type="text/css">
+        .clear{ clear: both; }
+        .explanation{ padding: 11px 0;margin: 10px; color: #707070;border-radius: 5px;background-color: #f5faff;border: 1px dashed #1b9ad5; width: 50%; }
+        .explanation table{ margin-left: 13px;}
+        .list-div{ width: 50%; margin: 0 10px; }
+        .list-div td{ padding-right: 10px; }
+
+    </style>
+    <!--***************  新增加样式 End ***************-->
+</head>
+<body>
+
+<script type="text/javascript" src="http://www.mtangmpin.com/data/assets/js/utils.js"></script><script type="text/javascript" src="http://www.mtangmpin.com/admin/js/listtable.js"></script>
+
+<div class="explanation">
+   <table>
+       <tr>
+           <td>编号：</td>
+           <td>222</td>
+       </tr>
+       <tr>
+           <td>申请日期：</td>
+           <td>2017-12-08</td>
+       </tr>
+       <tr>
+           <td>状态：</td>
+           <td style="color: red;">待审核</td>
+       </tr>
+   </table>
+</div>
+<div class="list-div" id="listDiv">
+    <!--用户列表部分-->
+    <table cellpadding="3" cellspacing="1">
+        <tr>
+            <th colspan="2">企业信息</th>
+        <tr>
+        <tr>
+            <td class="first-cell">企业名称</td>
+            <td class="first-cell">不同凡响渔具贸易有限公司</td>
+        </tr>
+        <tr>
+            <td class="first-cell">商户名称</td>
+            <td class="first-cell">不同凡响渔具店</td>
+        </tr>
+        <tr>
+            <td class="first-cell">所属营销中心</td>
+            <td class="first-cell">北京</td>
+        </tr>
+        <tr>
+            <td class="first-cell">姓名</td>
+            <td class="first-cell">安琪拉</td>
+        </tr>
+        <tr>
+            <td class="first-cell">手机号码</td>
+            <td class="first-cell">15900000000</td>
+        </tr>
+        <tr>
+            <td class="first-cell">所在地区</td>
+            <td class="first-cell">北京</td>
+        </tr>
+        <tr>
+            <td class="first-cell">详细地址</td>
+            <td class="first-cell">朝阳区</td>
+        </tr>
+        <tr>
+            <td class="first-cell">经销商账号</td>
+            <td class="first-cell">angelababy</td>
+        </tr>
+    </table>
+
+</div>
+<div style="margin: 10px;">
+    <input name="" type="submit" id="" value="通过" class="button" >
+    <input name="" type="submit" id="" value="拒绝" class="button" >
+    <input type="submit" onclick="location.href='supplier_list.html'" value=" 返回上一级 ">
+</div>
+
+<div id="footer" style="display:none">
+</div>
+<!--
+<embed src="images/online.wav" width="0" height="0" autostart="false" name="msgBeep" id="msgBeep" enablejavascript="true"/>
+-->
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0" id="msgBeep" width="1" height="1">
+    <param name="movie" value="images/online.swf">
+    <param name="quality" value="high">
+    <embed src="http://www.mtangmpin.com/admin/images/online.swf" name="msgBeep" id="msgBeep" quality="high" width="0" height="0" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?p1_prod_version=shockwaveflash">
+    </embed>
+</object>
+
+<script language="JavaScript">
+
+    if (document.getElementById("listDiv"))
+    {
+        document.getElementById("listDiv").onmouseover = function(e)
+        {
+            obj = Utils.srcElement(e);
+
+            if (obj)
+            {
+                if (obj.parentNode.tagName.toLowerCase() == "tr") row = obj.parentNode;
+                else if (obj.parentNode.parentNode.tagName.toLowerCase() == "tr") row = obj.parentNode.parentNode;
+                else return;
+
+                for (i = 0; i < row.cells.length; i++)
+                {
+                    if (row.cells[i].tagName != "TH") row.cells[i].style.backgroundColor = '#EFEFEF';
+                }
+            }
+
+        }
+
+        document.getElementById("listDiv").onmouseout = function(e)
+        {
+            obj = Utils.srcElement(e);
+
+            if (obj)
+            {
+                if (obj.parentNode.tagName.toLowerCase() == "tr") row = obj.parentNode;
+                else if (obj.parentNode.parentNode.tagName.toLowerCase() == "tr") row = obj.parentNode.parentNode;
+                else return;
+
+                for (i = 0; i < row.cells.length; i++)
+                {
+                    if (row.cells[i].tagName != "TH") row.cells[i].style.backgroundColor = '#FFF';
+                }
+            }
+        }
+
+        document.getElementById("listDiv").onclick = function(e)
+        {
+            var obj = Utils.srcElement(e);
+
+            if (obj.tagName == "INPUT" && obj.type == "checkbox")
+            {
+                if (!document.forms['listForm'])
+                {
+                    return;
+                }
+                var nodes = document.forms['listForm'].elements;
+                var checked = false;
+
+                for (i = 0; i < nodes.length; i++)
+                {
+                    if (nodes[i].checked)
+                    {
+                        checked = true;
+                        break;
+                    }
+                }
+
+                if(document.getElementById("btnSubmit"))
+                {
+                    document.getElementById("btnSubmit").disabled = !checked;
+                }
+                for (i = 1; i <= 10; i++)
+                {
+                    if (document.getElementById("btnSubmit" + i))
+                    {
+                        document.getElementById("btnSubmit" + i).disabled = !checked;
+                    }
+                }
+            }
+        }
+
+    }
+    //-->
+</script>
+</body>
+</html>

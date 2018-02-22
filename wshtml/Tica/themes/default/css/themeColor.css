@@ -1,0 +1,762 @@
+/* ectouch.css  */
+.ect-header-banner .btn-submit1 {
+  color: #fff;
+  border-color: #007aff;
+  background: #007aff;
+}
+.ect-header-banner .btn-submit1:hover {
+  border-color: #007aff;
+  background: #007aff;
+}
+.color-red {
+  color: #007aff;
+}
+.con .color-red {
+  color: #007aff;
+}
+.red-bg {
+  background: #007aff;
+}
+.no-div-message a {
+  font-size: 1.5rem;
+  margin-top: .5rem;
+  display: block;
+  color: #007aff;
+}
+.swiper-pagination-bullet-active {
+  background: #007aff;
+  opacity: 1;
+  border: 1px solid #007aff;
+}
+.evaluation-star.active i {
+  color: #007aff;
+}
+.t-first {
+  color: #007aff;
+}
+.a-first:link {
+  color: #007aff;
+}
+.a-first:visited {
+  color: #007aff;
+}
+.b-color {
+  background: #007aff;
+}
+.em-promotion {
+  background: #007aff;
+  color: #fff;
+}
+a.btn-submit2 {
+  color: #007aff;
+}
+.btn-submit {
+  background: #007aff;
+  border: 1px solid #007aff;
+}
+.btn-submit2 {
+  border: 1px solid #007aff;
+  color: #007aff;
+}
+.btn-submit:hover {
+  border: 1px solid #007aff;
+  background: #007aff;
+}
+.btn-submit1,
+a.btn-submit1 {
+  color: #007aff;
+  background: none;
+  border: 1px solid #007aff;
+}
+.btn-submit1:hover {
+  background: none;
+  border: 1px solid #007aff;
+}
+.text-all.active {
+  border-bottom: 1px solid #007aff;
+}
+.is-yanjing {
+  color: #007aff;
+  height: 3rem;
+}
+span.t-jiantou.active {
+  color: #007aff;
+}
+.select-one .ect-select label.active {
+  border-color: #007aff;
+  color: #007aff;
+}
+.select-two .ect-select label i.icon-gou {
+  color: #007aff;
+}
+.select-two .ect-select label.active {
+  color: #007aff;
+}
+.select-three .ect-select label.active i {
+  border: 1px solid #007aff;
+  color: #fff;
+  background: #007aff url("http://www.ticaglobal.cn/themes/default/statics/img/iconfont-gou.png") center center no-repeat;
+  background-size: 70%;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  border: 1px solid #007aff;
+  background: #ffc8a3;
+}
+.ui-slider-range {
+  background: #007aff;
+}
+.radio-switching.active em {
+  background: #007aff;
+}
+.radio-switching.active hr {
+  background: #007aff;
+}
+.icon-flow-cart {
+  background: #007aff;
+}
+.product-sequence a.active {
+  color: #007aff;
+}
+.heart.active em {
+  color: #007aff;
+}
+.tab-title .active,
+.tab-title .active a {
+  color: #007aff;
+}
+.goods-evaluation-page .tab-title .active {
+  color: #007aff;
+}
+.index-discount p {
+  color: #007aff;
+}
+.index-price {
+  color: #007aff;
+}
+.recom-container .swiper-pagination-bullet-active,
+.brand-container .swiper-pagination-bullet-active {
+  background: #007aff;
+}
+.is-cainixihuan {
+  color: #007aff;
+}
+.user-register .hd .active {
+  color: #007aff;
+  border-bottom: 1px solid #007aff;
+}
+.user-register .hd .active:after {
+  border: 1px solid #007aff;
+}
+.menu-left ul li.active {
+  color: #007aff;
+}
+.menu-left ul li.active:before {
+  background: #007aff;
+}
+.f-cart-filter-btn .heart.active em {
+  color: #007aff;
+}
+.big-remark-all .remark-out {
+  color: #fff;
+  border-bottom: 1.5rem solid #007aff;
+}
+.flow-get-consignee .flow-checkout-adr i.icon-gou {
+  color: #007aff;
+}
+.flow-site .active h4 {
+  color: #007aff;
+}
+.filter-menu-title {
+  background: #007aff;
+  opacity: .8;
+}
+.filter-nenu-cart span {
+  color: #fff;
+  background: #007aff;
+}
+.g-s-info-add a {
+  border: 1px solid #007aff;
+  color: #007aff;
+}
+.g-s-info-add a.active {
+  background: #007aff;
+  color: #fff;
+}
+.shopping-list-nav ul li.active {
+  color: #007aff;
+}
+.shopping-list-nav ul li.active:after {
+  background: #007aff;
+}
+.shopping-abs a.active {
+  background: #007aff;
+  color: #fff;
+}
+.email-box {
+  background: #007aff;
+}
+.user-list-num {
+  background: #007aff;
+  color: #fff;
+}
+.cons-cont {
+  background: #007aff;
+  color: #fff;
+}
+.cons-cont:before {
+  background: #007aff;
+}
+.cons-zhisi-img {
+  background: #007aff;
+}
+.order-id-list ul li:first-of-type .t-remark {
+  color: #007aff;
+}
+.order-id-list ul li:before {
+  background: #007aff;
+  border: 2px solid #fff;
+}
+.purse-header-box {
+  background: #007aff;
+}
+.purse-ts-box {
+  background: #007aff;
+}
+.my-brand-login li.my-brand-text {
+  background: #007aff;
+}
+.brand-bg {
+  background: #007aff;
+}
+.hot-brand_street .swiper-pagination-bullet-active {
+  background: #007aff;
+}
+.brand-cont-header .g-s-info-add a {
+  color: #fff;
+  background: #007aff;
+}
+.bottom-box-brand {
+  background: #007aff;
+  color: #fff;
+}
+.brend-day-box span {
+  color: #007aff;
+}
+.b-l-page-pos ul li.active a {
+  color: #007aff;
+}
+.user-register-1 .hd-1 .active {
+  color: #007aff;
+}
+.a-col-red {
+  background: #007aff;
+}
+.my-bz {
+  color: #007aff;
+}
+.int-nav-box span,
+.int-nav-box-1 span {
+  color: #007aff;
+}
+.btn-submit-1 {
+  background: #007aff;
+  border: 1px solid #df4141;
+}
+.select-one-1 .ect-select label.active {
+  border-color: #007aff;
+  color: #007aff;
+}
+.com-list .active {
+  color: #007aff;
+}
+.foot-paizhao {
+  background: #007aff;
+}
+.com-nav-footer .active {
+  color: #007aff;
+}
+.write-sd span {
+  border: 1px solid #007aff;
+  color: #007aff;
+}
+.select-com .ect-select label.active i {
+  border: 1px solid #007aff;
+  color: #fff;
+  background: #007aff url("http://www.ticaglobal.cn/themes/default/statics/img/iconfont-gou.png") center center no-repeat;
+}
+.write-sd input {
+  color: #007aff;
+}
+.com-list a.active {
+  color: #007aff;
+}
+.com-list-1 a.active {
+  color: #007aff;
+}
+.dis-j-bg {
+  background: -webkit-linear-gradient(#13a76f, #007aff);
+  background: -o-linear-gradient(#13a76f, #007aff);
+  background: -moz-linear-gradient(#13a76f, #007aff);
+  background: linear-gradient(#13a76f, #007aff);
+}
+.rank-cont span {
+  color: #007aff;
+}
+.red2-bg {
+  background: #007aff;
+}
+.open-header-bg .o-hs.active {
+  color: #007aff;
+}
+.open-header-bg .o-hs-bg.active {
+  background: #007aff;
+}
+.open-header-bg .o-hs-x.active {
+  border-bottom: 2px solid #007aff;
+}
+.user-shop-nav h4 {
+  color: #007aff;
+}
+.user-shop-shoucang {
+  background: #007aff;
+}
+.pack-money-left {
+  color: #007aff;
+}
+.pack-money-left span {
+  color: #007aff;
+}
+.pack-money-right label {
+  color: #fff;
+  background: #007aff;
+}
+.dis-money {
+  color: #007aff;
+}
+.new-footer-box li .nav-cont.active {
+  color: #007aff;
+}
+.n-index-box .product-div p span {
+  color: #007aff;
+}
+.index-weixin-box h3 {
+  color: #007aff;
+}
+#div1 a {
+  color: #007aff;
+}
+#div1 .green1 {
+  color: #007aff;
+  background: #fdd7c6;
+}
+.goods-fixed-1 {
+  background: #007aff;
+}
+.n-but-ls {
+  background: #fff;
+  border: 1px solid #007aff;
+}
+a.n-but-ls {
+  color: #007aff;
+}
+.n-but-ls a {
+  color: #007aff;
+}
+.n-but-ls:hover {
+  background: #f6f6f9;
+  border: 1px solid #007aff;
+}
+.ect-radio input:checked + label i,
+.ect-checkbox input:checked + label i {
+  color: #F00;
+  background: url("http://www.ticaglobal.cn/themes/default/statics/img/radio.png") center center #007aff no-repeat;
+}
+.n-activity-list p a i.zk {
+  background: #007aff;
+  color: #fff;
+}
+.code-register {
+  color: #007aff;
+}
+.ect-colory {
+  color: #007aff !important;
+}
+.s-but {
+  border: 1px solid #007aff;
+  color: #007aff;
+}
+.purse-header-box {
+  background: #007aff;
+}
+.purse-ts-box {
+  background: #007aff;
+}
+.n-acc-log .btn-default,
+.n-acc-log a {
+  border: 1px solid #007aff;
+  color: #007aff;
+}
+.n-acc-but-queding div {
+  background: #007aff;
+  border: 1px solid #007aff;
+}
+.btn-submit-1 {
+  background: #007aff;
+  border: 1px solid #df4141;
+}
+.select-one-1 .ect-select label.active {
+  border-color: #007aff;
+  color: #007aff;
+}
+.n-input-box label.active {
+  border-color: #007aff;
+  color: #007aff;
+}
+.raise-button-1 {
+  background: #007aff;
+}
+.raise-progressBar .color {
+  background: #FFA538;
+  background: -webkit-gradient(linear, left top, right top, from(#ffb43d), to(#007aff));
+  background: -moz-linear-gradient(left, #ffb43d, #007aff);
+  background: -o-linear-gradient(left, #ffb43d, #007aff);
+  background: -ms-linear-gradient(left, #ffb43d, #007aff);
+}
+.raise-pay-btn div {
+  background: #007aff;
+  color: #fff;
+}
+.footer-nav .nav-list.active {
+  color: #007aff;
+}
+.goods-num-box ul li {
+  border-right: 1px solid #007aff;
+}
+.goods-num-box ul {
+  border-bottom: 1px solid #007aff;
+}
+.goods-num-box ul li:last-child {
+  border-right: 1px solid #007aff;
+}
+.goods-num-box ul li:first-child {
+  border-left: 1px solid #007aff;
+}
+.goods-box-bor {
+  border-top: 1px solid #007aff;
+}
+.raise-col {
+  color: #007aff;
+}
+.b-raise {
+  background: #007aff;
+}
+.btn-submit-raise {
+  background: #007aff;
+  border: 1px solid #007aff;
+  color: #fff;
+}
+.btn-submit-raise:hover {
+  border: 1px solid #007aff;
+  background: #007aff;
+}
+.raise-cate-nav li.current {
+  color: #007aff;
+}
+.tab-title-raise.active,
+.tab-title-raise.active a {
+  color: #007aff;
+}
+.footer-nav-raise .nav-list.active {
+  color: #007aff;
+}
+.tab-title-raise .active,
+.tab-title-raise .active a {
+  color: #007aff;
+}
+.select-one .ect-select-raise label.active {
+  border-color: #007aff;
+  color: #007aff;
+}
+.select-two .ect-select-raise label i.icon-gou {
+  color: #007aff;
+}
+.select-two .ect-select-raise label.active {
+  color: #007aff;
+}
+.select-three .ect-select-raise label.active i {
+  border: 1px solid #007aff;
+  color: #fff;
+  background: #007aff url("http://www.ticaglobal.cn/themes/default/statics/img/iconfont-gou.png") center center no-repeat;
+}
+.raise-new-btn input,
+.raise-new-btn button {
+  color: #007aff;
+}
+.n-btn-box div {
+  background: #007aff;
+  border: 1px solid #007aff;
+}
+.raise-new-btn div {
+  border: 1px solid #007aff;
+}
+.btn-submit-r,
+a.btn-submit2 {
+  color: #007aff;
+  border: 1px solid #007aff;
+}
+.btn-submit2:hover {
+  border: 1px solid #007aff;
+}
+.btn-submit-r:active,
+.btn-submitr:hover {
+  border: 1px solid #007aff;
+}
+.raise-order-header {
+  background: #007aff;
+}
+.raise-heart.active em {
+  color: #007aff;
+}
+.n-header-raise {
+  background: #007aff !important;
+}
+.n-raise-btn button {
+  background: #007aff;
+  color: #fff;
+}
+.btn-raise-box {
+  border: 1px solid #007aff;
+  color: #007aff;
+}
+.n-message-raise a input {
+  color: #007aff;
+}
+.order-id-list-raise ul li:first-of-type .t-remark {
+  color: #007aff;
+}
+.order-id-list-raise ul li:before {
+  background: #007aff;
+}
+/* style.css */
+.ect-bg {
+  background: #007aff !important;
+  color: #fff !important;
+}
+.ect-color {
+  color: #007aff !important;
+}
+.ect-colory {
+  color: #007aff !important;
+}
+.ect-bg-colory {
+  background: #007aff !important;
+}
+.ect-border-top {
+  border-top: 2px solid #007aff;
+}
+i.mj {
+  background: #007aff;
+}
+i.zk {
+  background: #007aff;
+}
+i.pm {
+  background: #007aff;
+}
+.user-tab ul li.active a,
+.user-tab ul li.active a:link {
+  color: #007aff;
+}
+.ect-radio input:checked + label i,
+.ect-checkbox input:checked + label i {
+  color: #F00;
+  background: url("http://www.ticaglobal.cn/themes/default/images/radio.png") center center #007aff no-repeat;
+  background-size: 80%;
+  border: none;
+}
+.btn-info-a {
+  border: 1px solid #007aff;
+}
+.tit-shanchu {
+  color: #007aff;
+}
+.focus .hd ul .on {
+  background: #007aff;
+}
+.touchweb-com_headerFilter .right {
+  color: #007aff;
+}
+.touchweb-com_listType a .range.visited {
+  color: #007aff;
+}
+.touchweb_mod_Filter .btn1 .sure {
+  background-color: #007aff;
+  border: 1px solid #007aff;
+}
+.goods-option-conr input:checked + label {
+  border: 1px solid #007aff;
+}
+.goods-option-con input:checked + label:after,
+.gw-con .gwc-fl .gwc-fl-con input:checked + label:before {
+  background: #007aff;
+}
+.bnt_sub {
+  background: none repeat scroll 0 0 #007aff;
+}
+.flow-done i.glyphicon:before {
+  color: #007aff;
+}
+.popGeneral .popbtn a {
+  background: #007aff;
+}
+.chack-input-box label.active {
+  background: url("http://www.ticaglobal.cn/themes/default/images/radio.png") center center #007aff no-repeat;
+  border: 1px solid #007aff;
+}
+.raise-order-box .service a {
+  border: 1px solid #007aff;
+  color: #007aff;
+}
+/* search.css */
+.em-promotion {
+  background: #007aff;
+}
+.btn-submit {
+  background: #007aff;
+  border: 1px solid #13AB53;
+}
+.btn-submit:hover {
+  background: #007aff;
+  border: 1px solid #13AB53;
+}
+.btn-disab {
+  background: #bbb;
+  border: 1px solid #007aff;
+}
+.text-all.active {
+  border-bottom: 1px solid #007aff;
+}
+.is-yanjing {
+  color: #007aff;
+}
+span.t-jiantou.active {
+  color: #007aff;
+}
+.heart.active em {
+  color: #007aff;
+}
+.n-but-bor {
+  border: 1px solid #007aff;
+  background: #fff;
+  color: #007aff;
+}
+.btn-info11 {
+  color: #007aff;
+  background-color: #f6f6f9;
+  border-color: #007aff;
+}
+.btn-info11.focus,
+.btn-info11:focus {
+  color: #007aff;
+  background-color: #f6f6f9;
+  border-color: #007aff;
+}
+.btn-info11:hover {
+  color: #007aff;
+  background-color: #f6f6f9;
+  border-color: #007aff;
+}
+/* styleNew.css */
+.prolist_new li h4 strong.ect-colory {
+  color: #007aff !important;
+}
+.foot_cart p .ect-colory {
+  color: #007aff !important;
+}
+.foot_cart a[type=button] {
+  background: #007aff;
+  color: #fff;
+}
+.footer-nav .nav-list.active {
+  color: #007aff;
+}
+.quan_view_detial a.quan_view_close {
+  background: #007aff;
+}
+.flow-checkout_new .ect-radio input:checked + label i {
+  color: #F00;
+  background: url("http://www.ticaglobal.cn/themes/default/images/radio.png") center center #007aff no-repeat;
+  border: 1px solid #007aff;
+}
+.kuaidi_view_detial a.quan_view_close {
+  color: #fff;
+  background: #007aff;
+}
+.zhifu_view_detial a.quan_view_close {
+  color: #fff;
+  background: #007aff;
+}
+.prolist_new_record .ect-colory {
+  color: #007aff !important;
+}
+.jidianList .jidianAdd {
+  color: #007aff;
+}
+.my-pagination .swiper-pagination-bullet-active {
+  color: #007aff;
+}
+.my-pagination .swiper-pagination-bullet-active:after {
+  background-color: #007aff;
+}
+.kuaidi_view_detial a.win_close {
+  background: #007aff;
+  color: #fff;
+}
+.zhifu_view_detial a.win_close {
+  background: #007aff;
+  color: #fff;
+}
+.pay_state {
+  background: #007aff;
+  color: #fff;
+}
+.pay_state_ok {
+  background: #007aff url("../img/pay_bg_ok.png") right bottom no-repeat;
+}
+.pay_state_no {
+  background: #007aff url("../img/pay_bg_no.png") right bottom no-repeat;
+}
+.pay_money span {
+  color: #007aff;
+}
+.foot_btns a:nth-of-type(1) {
+  background: #fff;
+  color: #007aff;
+}
+.foot_btns a:nth-of-type(2) {
+  background: #007aff;
+  color: #fff;
+}
+/* index category prolist */
+.btn-submit {
+  background: #007aff;
+  border: 1px solid #007aff;
+}
+.product-sequence a.a-change .icon-xiajiantoushang {
+  color: #007aff;
+}
+.quan_win {
+  background: #0f5ab2 url("/data/assets/img/quan_bg_index.jpg") center top no-repeat;
+}
+.quan_win h1 span {
+  color: #fffc00;
+}
+/* yellow */
+.quan_win a {
+  color: #007aff;
+}

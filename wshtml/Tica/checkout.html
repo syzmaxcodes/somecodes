@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+    <title>迪佳百川俱乐部</title>
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/data/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/data/assets/bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/data/assets/swiper/css/swiper.min.css"/>
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/statics/css/ectouch.css" />
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/css/photoswipe.css">
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/css/style.css">
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/js/ectouch.js"></script>
+    <link rel="stylesheet" href="http://www.ticaglobal.cn/themes/default/statics/css/search.css" />
+    <script type="text/javascript" >var tpl = 'http://www.ticaglobal.cn/themes/default';</script>
+    <!-- 新增样式表 -->
+    <link rel="stylesheet" href="themes/default/css/styleNew.css">
+    <!-- 新增样式表 -->
+</head>
+<body style="max-width:640px;">
+<!--
+<div id="demo-2" style="margin-top: 0;color:#666; width: 100%; box-sizing:border-box; padding:0 3%;height: 2.5rem; z-index: 200; background:rgba(0,0,0,.78);position: fixed;text-align: center; border-bottom: 1px solid #393939; ">
+    <marquee scrollamount=3; style=" line-height: 2.5rem; font-size: 1.2rem;color:#666;  ">
+        <span style="color: #fff;">宋芳渔具店</span>您好，您共有<span style="color: #ffd200;">10000</span>积点，可抵扣<span style="color: #ffd200;">¥100.00</span>元
+    </marquee>
+</div>
+-->
+<!--<div class="con m-b7 new-maxbox" style="margin-top: 2.5rem;">-->
+<div class="con m-b7 new-maxbox">
+    <div class="con">
+        <div class="flow-checkout flow-checkout_new">
+            <form action="/index.php?m=default&c=flow&a=done&u=441" method="post" name="theForm" id="theForm" onSubmit="return checkOrderForm(this)">
+                <script type="text/javascript">
+                    var flow_no_payment = "您必须选定一个支付方式。";
+                    var flow_no_shipping = "您必须选定一个配送方式。";
+                </script>
+
+                <!-- 收货地址 -->
+                <a href="/index.php?m=default&c=flow&a=consignee_list&u=441">
+                    <article class="checkout-add address_check">
+                        <label for="addressId">
+                            <p>吴彦祖 <span>13699999999</span></p>
+                            <p>浙江省宁波市鄞州区首南街道罗蒙环球城欢乐颂1幢505室</p>
+                            <i class="fa fa-angle-right"></i>
+                            <i class="fa iconfont icon-comiisdingwei" ></i>
+                        </label>
+                    </article>
+                </a>
+
+                <!-- 商品列表 -->
+                <section class="prolist_new">
+                    <ul>
+                        <li>
+                            <a href="###"><img src="http://www.ticaglobal.cn/data/attached/images/201710/goods_img/180_G_1507592485888.jpg" title=""></a>
+                            <article>
+                                <h4>
+                                    <a href="###">迪佳水纹粹四代台钓鲤竿迪佳水纹粹四代台钓鲤竿迪佳水纹粹四代台钓鲤竿迪佳水纹粹四代台钓鲤竿</a>
+                                    <strong class="ect-colory">¥1055.00
+                                        <br>
+                                        <!--<img src="themes/default/img/jxs_icon.png">-->
+                                    </strong>
+                                </h4>
+                                <h5>尺寸:技霸矶1.25号5米规格很长哦
+                                    <small>×1000</small>
+                                </h5>
+                                <!-- 消费者可见 -->
+                                <!--<span class="quan_y">可用券</span>-->
+                            </article>
+                        </li>
+                        <li>
+                            <a href="###"><img src="http://www.ticaglobal.cn/data/attached/images/201708/goods_img/25_G_1502415956880.jpg" title=""></a>
+                            <article>
+                                <h4>
+                                    <a href="###">迪佳水纹粹四代台钓鲤竿迪佳水纹粹四代台钓鲤竿迪佳水纹粹四代台钓鲤竿迪佳水纹粹四代台钓鲤竿</a>
+                                    <strong class="ect-colory">¥1055.00
+                                        <br>
+                                        <!--<img src="themes/default/img/jxs_icon.png">-->
+                                    </strong>
+                                </h4>
+                                <h5>尺寸:5.4米
+                                    <small>×1</small>
+                                </h5>
+                                <!-- 消费者可见 -->
+                                <!--<span class="quan_y">可用券</span>-->
+                            </article>
+                        </li>
+                        <li>
+                            <a href="###"><img src="http://www.ticaglobal.cn/data/attached/images/201708/thumb_img/94_thumb_G_1503700363125.jpg" title=""></a>
+                            <article>
+                                <h4>
+                                    <a href="###">消费者商城 - 可用券时</a>
+                                    <strong class="ect-colory">¥1055.00
+                                        <br>
+                                        <!--<img src="themes/default/img/jxs_icon.png">-->
+                                    </strong>
+                                </h4>
+                                <h5>尺寸:5.4米
+                                    <small>×1</small>
+                                </h5>
+                                <!-- 消费者可见 -->
+                                <span class="quan_y">可用券</span>
+                            </article>
+                        </li>
+                        <li>
+                            <a href="###"><img src="http://www.ticaglobal.cn/data/attached/images/201708/thumb_img/94_thumb_G_1503700363125.jpg" title=""></a>
+                            <article>
+                                <h4>
+                                    <a href="###">消费者商城 - 不可用券时</a>
+                                    <strong class="ect-colory">¥1055.00
+                                        <br>
+                                        <!--<img src="themes/default/img/jxs_icon.png">-->
+                                    </strong>
+                                </h4>
+                                <h5>尺寸:5.4米
+                                    <small>×1</small>
+                                </h5>
+                                <!-- 消费者可见 -->
+                                <!--<span class="quan_y">可用券</span>-->
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+                <div class="clear"></div>
+
+                <!--配送-->
+                <section class="flow-checkout_new_box" style="margin-top:0.6em;">
+                    <label for="" class="kuaidi_view">
+                        配送方式
+                        <small style="margin-right: 2rem; " id="expressName"></small>
+                        <i class="fa fa-angle-right"></i>
+                    </label>
+                    <!-- 快递选择弹窗  !!!! 脚本写在最后 !!!-->
+                    <div class="mask-filter-div"></div>
+                    <div class="show-goods-attr j-filter-show-div ts-3 b-color-1 kuaidi_view_detial">
+                        <h1>配送方式</h1>
+                        <article>
+                            <div id="collapseThree" class="panel-collapse collapse in">
+                                <ul class="ect-radio">
+                                    <!--<li>-->
+                                        <!--<input name="kuaidi" type="radio" id="kuaidi_0" value="0" onclick="test()"  style="vertical-align:middle" checked>-->
+                                        <!--<label for="kuaidi_1">快递 免邮<i></i></label>-->
+                                    <!--</li>-->
+                                    <li>
+                                    <input name="kuaidi" type="radio" id="kuaidi_1" value="1" onclick="test()"  style="vertical-align:middle" checked>
+                                    <label for="kuaidi_1">中通快递 ¥20.00<i></i></label>
+                                    </li>
+                                    <li>
+                                    <input name="kuaidi" type="radio" id="kuaidi_2" value="2" onclick="test()"  style="vertical-align:middle">
+                                    <label for="kuaidi_2">圆通快递 ¥15.00<i></i></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <a href="javascript:void(0)" class="ts-3 quan_view_close win_close">关闭</a>
+                        <!--<i class="iconfont icon-guanbi show-div-guanbi"></i>-->
+                    </div>
+                    <!-- 快递选择弹窗 End -->
+                </section>
+
+
+                <!--支付方式-->
+                <section class=" ect-padding-lr checkout-select flow-checkout_new_box" id="accordion">
+                    <label for="" class="zhifu_view">
+                        支付方式
+                        <small style="margin-right: 2rem; " id="payName"></small>
+                        <i class="fa fa-angle-right"></i>
+                    </label>
+                    <!-- 支付选择弹窗  !!!! 脚本写在最后 !!!-->
+                    <div class="show-goods-attr j-filter-show-div ts-3 b-color-1 zhifu_view_detial">
+                        <h1>请选择支付方式</h1>
+                        <article>
+                            <div id="collapseTwo" class="panel-collapse collapse in">
+                                <ul class="ect-radio">
+                                    <li>
+                                        <input name="payment" type="radio" id="payment_1" value="1"  onclick="selectPayment(this)"  style="vertical-align:middle" checked>
+                                        <label for="payment_1"><img src="themes/default/img/pay_wechart.jpg">微信支付<i></i></label>
+                                    </li>
+                                    <li>
+                                        <input name="payment" type="radio" id="payment_2" value="2"  onclick="selectPayment(this)"  style="vertical-align:middle">
+                                        <label for="payment_2"><img src="themes/default/img/pay_ali.jpg">支付宝<i></i></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <a href="javascript:void(0)" class="ts-3 quan_view_close win_close">关闭</a>
+                        <!--<i class="iconfont icon-guanbi show-div-guanbi"></i>-->
+                    </div>
+                    <!-- 支付选择弹窗 End -->
+                </section>
+
+                <!--订单留言-->
+                <section class="flow-checkout_new_box" id="collapseFive">
+                    <label for="" style="border-bottom: none;">
+                        订单留言
+                        <input type="text" name="postscript" placeholder="请输入订单留言">
+                    </label>
+                </section>
+
+
+                <!--积点抵扣-->
+                <!--
+                <section class="flow-checkout_new_box flow-checkout_new_boxJf">
+                    <label for="">
+                        使用5000积点抵扣<b>¥500</b>
+                        <small>
+                            <span class="switch-on" id="flow_checkbox_JD"></span>
+                        </small>
+                    </label>
+                </section>
+                <div style="display: none;">
+                    <input type="radio" name="jifendikou" id="jifendikou_0" value="0" checked="checked"  onclick="xxx(this)">使用
+                    <input type="radio" name="jifendikou" id="jifendikou_1" value="1"  onclick="xxx(this)">不使用
+                </div>
+                -->
+
+                <!--消费者可见：优惠券-->
+                <!--
+                <section class="flow-checkout_new_box flow-checkout_new_boxJf" style="margin-top: 10px;">
+                    <label for="" style="border-bottom: none;">
+                        使用<b>迪佳八折尊享券</b>
+                        <small>
+                            <span class="switch-on" id="flow_checkbox_YHQ"></span>
+                        </small>
+                    </label>
+                </section>
+                -->
+                <!-- 开关按钮所需文件在页面最下面 -->
+                <!--
+                <div style="display: none;">
+                    <input type="radio" name="youhuiquan" id="youhuiquan_0" value="0" checked="checked" >使用
+                    <input type="radio" name="youhuiquan" id="youhuiquan_1" value="1" >不使用
+                </div>
+                -->
+
+                <!-- 金额未满足用券条件时 -->
+                <div class="yqtiaojian"><i class="iconfont icon-tishi" ></i>该订单不符合此优惠券使用条件</div>
+
+                <!--金额统计-->
+                <section class="ect-margin-tb ect-margin-bottom0 ect-padding-lr checkout-select checkout-pro-list" style="border: none;">
+                    <div class="ect-padding-tb text-right" id="ECS_ORDERTOTAL">
+                        <table width="100%"  style="line-height: 3rem;">
+                            <tr>
+                                <td align="left">商品总价</td>
+                                <td align="right">¥2698.00</td>
+                            </tr>
+                            <!--<tr>-->
+                            <!--<td align="left">积点抵扣</td>-->
+                            <!--<td align="right">-¥500.00</td>-->
+                            <!--</tr>-->
+                            <tr>
+                                <td align="left">优惠</td>
+                                <td align="right">-¥500.00</td>
+                            </tr>
+                            <tr>
+                                <td align="left">运费</td>
+                                <td align="right">¥0.00</td>
+                            </tr>
+                            <tr>
+                                <td align="left">实际应付</td>
+                                <td align="right">¥2198.00</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </section>
+
+
+                <div class="foot_cart">
+                    <p id="ECS_ORDERTOTAL1">
+                        应付：<b class="ect-colory" id="goods_subtotal">¥2198.00</b><br>
+                        共<b id="total_number">4</b>件，已包含全部费用
+                    </p>
+                    <input type="submit" name="submit" value="去结算" class="btn btn-info ect-btn-info ect-colorf ect-bg"  style="border-radius:0; width: 32%; float: right; padding:0.7em 0;"/>
+                    <input type="hidden" name="step" value="done" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        //设置cookie
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+        function clearHistroy(){
+            setCookie('ECS[keywords]', '', -1);
+            document.getElementById("search_histroy").style.visibility = "hidden";
+        }
+    </script><script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/jquery-2.1.4.min.js" ></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.json.js" ></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/common.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.more.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/utils.js" ></script>
+    <script src="http://www.ticaglobal.cn/data/assets/swiper/js/jquery.swiper.min.js"></script>
+    <script src="http://www.ticaglobal.cn/themes/default/js/ectouch.js"></script>
+    <script src="http://www.ticaglobal.cn/themes/default/js/simple-inheritance.min.js"></script>
+    <script src="http://www.ticaglobal.cn/themes/default/js/code-photoswipe-1.0.11.min.js"></script>
+    <script src="http://www.ticaglobal.cn/data/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://www.ticaglobal.cn/themes/default/js/jquery.scrollUp.min.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/validform.js" ></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/themes/default/statics/js/ectouch.js"></script>
+    <script language="javascript">
+        var handler = function(e) { //禁止浏览器默认行为
+            e.preventDefault();
+        };
+        /*banner滚动图片*/
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            loop: true,
+            autoplay : 2000
+        });
+        /*弹出评论层并隐藏其他层*/
+        function openSearch(){
+            document.addEventListener("touchmove", handler, false);
+            $("body").addClass("show-search-div");
+            $(".search-div").css("z-index","4999");
+            $("input[name='keywords']").focus();
+        }
+    </script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/shopping_flow.js"></script>
+    <script>
+        var selectedCou = null;
+        /**
+         * 改变分享红包
+         */
+        function selectCou(obj)
+        {
+            if (selectedCou == obj)
+            {
+                return;
+            }
+            else
+            {
+                selectedCou = obj;
+            }
+
+            $.get('index.php?m=default&c=flow&a=select_cou', {cou:obj.value}, function(data){
+//			console.log(data);
+                orderSelectedResponse(data);
+            }, 'json');
+        }
+    </script>
+    <script>
+        var selectedRoll = null;
+        /**
+         * 是否注册礼品卷
+         */
+        function selectRoll(obj)
+        {
+            if (selectedRoll == obj)
+            {
+                return;
+            }
+            else
+            {
+                selectedRoll = obj;
+            }
+
+            $.get('index.php?m=default&c=flow&a=select_roll', {roll:obj.value});
+        }
+    </script>
+
+    <script>
+        function back_goods_number(id){
+            var goods_number = document.getElementById('goods_number'+id).value;
+            document.getElementById('back_number'+id).value = goods_number;
+        }
+        function change_goods_number(type, id)
+        {
+            var goods_number = document.getElementById('goods_number'+id).value;
+            if(type != 2){back_goods_number(id)}
+            if(type == 1){goods_number--;}
+            if(type == 3){goods_number++;}
+            if(goods_number <=0 ){goods_number=1;}
+            if(!/^[0-9]*$/.test(goods_number)){goods_number = document.getElementById('back_number'+id).value;}
+            document.getElementById('goods_number'+id).value = goods_number;
+            $.post('/index.php?m=default&c=flow&a=ajax_update_cart&u=441', {
+                rec_id : id,goods_number : goods_number
+            }, function(data) {
+                change_goods_number_response(data,id);
+            }, 'json');
+        }
+        // 处理返回信息并显示
+        function change_goods_number_response(result,id)
+        {
+            if (result.error == 0){
+                var rec_id = result.rec_id;
+                $("#goods_number_"+rec_id).val(result.goods_number);
+                document.getElementById('total_number').innerHTML = result.total_number;//更新数量
+                document.getElementById('goods_subtotal').innerHTML = result.total_desc;//更新小计
+                if (document.getElementById('ECS_CARTINFO')){
+                    //更新购物车数量
+                    document.getElementById('ECS_CARTINFO').innerHTML = result.cart_info;
+                }
+            }else if (result.message != ''){
+                alert(result.message);
+                var goods_number = document.getElementById('back_number'+id).value;
+                document.getElementById('goods_number'+id).value = goods_number;
+            }
+        }
+        /*点击下拉手风琴效果*/
+    </script>
+
+
+    <!-- 开关按钮 -->
+    <script src="themes/default/js/honeySwitch.js"></script>
+
+    <script>
+
+        // 开关按钮与radio onclick事件关联
+        function xxx(obj){
+            //  alert(obj.value);
+        }
+
+        $(function() {
+            switchEvent("#flow_checkbox_JD",function(){
+                // 开
+                //alert(111);
+                var $jifendikou_0 = $("input[name='jifendikou'][id='jifendikou_0']");
+                var $jifendikou_1 = $("input[name='jifendikou'][id='jifendikou_1']");
+                $jifendikou_0.prop("checked",true);
+                $jifendikou_1.prop("checked",false);
+                $jifendikou_0.attr("checked",true);
+                $jifendikou_1.attr("checked",false);
+                var jifendikou_0= $jifendikou_0[0];
+                //xxx(jifendikou_0)
+            },function(){
+                // 关
+                var $jifendikou_0 = $("input[name='jifendikou'][id='jifendikou_0']");
+                var $jifendikou_1 = $("input[name='jifendikou'][id='jifendikou_1']");
+                $jifendikou_1.prop("checked",true);
+                $jifendikou_0.prop("checked",false);
+                $jifendikou_1.attr("checked",true);
+                $jifendikou_0.attr("checked",false);
+                var jifendikou_1= $jifendikou_1[0];
+                //xxx(jifendikou_1)
+            });
+
+            // 是否使用优惠券
+            switchEvent("#flow_checkbox_YHQ",function(){
+                // 开
+                var $youhuiquan_0 = $("input[name='youhuiquan'][value='0']")
+                var $youhuiquan_1 = $("input[name='youhuiquan'][value='1']")
+                $youhuiquan_0.prop("checked",true);
+                $youhuiquan_1.prop("checked",false);
+                $youhuiquan_0.attr("checked",true);
+                $youhuiquan_1.attr("checked",false);
+            },function(){
+                // 关
+                var $youhuiquan_0 = $("input[name='youhuiquan'][value='0']")
+                var $youhuiquan_1 = $("input[name='youhuiquan'][value='1']")
+                $youhuiquan_1.prop("checked",true);
+                $youhuiquan_0.prop("checked",false);
+                $youhuiquan_1.attr("checked",true);
+                $youhuiquan_0.attr("checked",false);
+            });
+
+        })
+    </script>
+
+    <!-- 快递选择弹窗 -->
+    <script type="text/javascript">
+        var handler = function (e) { //禁止浏览器默认行为
+            e.preventDefault();
+        };
+        $(function($) {
+            // 快递选择
+            /*弹出层方式*/
+            $(".kuaidi_view").click(function () {
+                document.addEventListener("touchmove", handler, false);
+                $(".kuaidi_view_detial").addClass("show");
+                $(".mask-filter-div").addClass("show");
+            });
+            /*关闭弹出层*/
+            $(".mask-filter-div,.show-div-guanbi,.quan_view_close").click(function () {
+                document.removeEventListener("touchmove", handler, false);
+                $(".kuaidi_view_detial").removeClass("show");
+                $(".mask-filter-div").removeClass("show");
+                return false;
+            });
+
+            // 支付选择
+            /*弹出层方式*/
+            $(".zhifu_view").click(function () {
+                document.addEventListener("touchmove", handler, false);
+                $(".zhifu_view_detial").addClass("show");
+                $(".mask-filter-div").addClass("show");
+            });
+            /*关闭弹出层*/
+            $(".mask-filter-div,.show-div-guanbi,.quan_view_close").click(function () {
+                document.removeEventListener("touchmove", handler, false);
+                $(".zhifu_view_detial").removeClass("show");
+                $(".mask-filter-div").removeClass("show");
+                return false;
+            });
+        });
+
+        /* 快递选中后并关闭弹窗 */
+        $('#collapseThree').bind("click",function(){
+            //这是写选择事件
+            var thisvar;
+            $(this).find('input').each(function(){
+                if($(this).is(":checked")){
+                    thisvar = $(this).next('label').text();
+                }
+            });
+            $('#expressName').text(thisvar);
+            //这是关闭弹窗事件
+            document.removeEventListener("touchmove", handler, false);
+            $(".kuaidi_view_detial").removeClass("show");
+            $(".mask-filter-div").removeClass("show");
+        });
+
+        /* 支付方式选中后关闭弹窗 */
+        $('#collapseTwo').bind("click",function(){
+            //这是写选择事件
+            var thisvar;
+            $(this).find('input').each(function(){
+                if($(this).is(":checked")){
+                    thisvar = $(this).next('label').text();
+                }
+            });
+            $('#payName').text(thisvar);
+            //这是关闭弹窗事件
+            document.removeEventListener("touchmove", handler, false);
+            $(".zhifu_view_detial").removeClass("show");
+            $(".mask-filter-div").removeClass("show");
+        })
+    </script>
+
+    <!-- 加载获取当前选择快递、支付方式  -->
+    <script>
+        window.onload=function myshipping()
+        {
+            // 配送方式
+            var thisvar;
+            $('#collapseThree').find('input').each(function(){
+                if($(this).is(":checked")){
+                    thisvar = $(this).next('label').text();
+                }
+            });
+            $('#expressName').text(thisvar);
+            // 支付方式
+            var thisvar2;
+            $('#collapseTwo').find('input').each(function(){
+                if($(this).is(":checked")){
+                    thisvar2 = $(this).next('label').text();
+                }
+            });
+            $('#payName').text(thisvar2);
+        }
+    </script>
+
+</div>
+</body>
+</html>
