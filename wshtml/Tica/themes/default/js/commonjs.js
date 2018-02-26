@@ -70,21 +70,12 @@ setInterval(function () {
     var minute = parseInt(time / 1000 / 60 % 60);
     var seconds = parseInt(time / 1000 % 60);
     if(time>0){
-        if(hour<10){
-            $('#time_h').html('0'+hour);
-        }else{
-            $('#time_h').html(hour);
-        }
-        if(minute<10){
-            $('#time_m').html('0'+minute);
-        }else{
-            $('#time_m').html(minute);
-        }
-        if(seconds<10){
-            $('#time_s').html('0'+seconds);
-        }else{
-            $('#time_s').html(seconds);
-        }
+        hour = (String(hour).length >= 2) ? hour : '0' + hour;
+        minute = (String(minute).length >= 2) ? minute : '0' + minute;
+        seconds = (String(seconds).length >= 2) ? seconds : '0' + seconds;
+        $('#time_h').html(hour);
+        $('#time_m').html(minute);
+        $('#time_s').html(seconds);
     }else{
         $('#time_h').html('00');
         $('#time_m').html('00');
