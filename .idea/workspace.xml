@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="630788da-33fa-4362-a88f-6b58cef25dee" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wshtml/Tica/themes/default/js/commonjs.js" afterPath="$PROJECT_DIR$/wshtml/Tica/themes/default/js/commonjs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wshtml/Tica/order_detail.html" afterPath="$PROJECT_DIR$/wshtml/Tica/order_detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="somecodes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,8 +28,8 @@
       <file leaf-file-name="order_detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wshtml/Tica/order_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.4210525">
-              <caret line="253" column="64" selection-start-line="253" selection-start-column="64" selection-end-line="253" selection-end-column="64" />
+            <state vertical-scroll-proportion="-15.62963">
+              <caret line="262" column="19" selection-start-line="262" selection-start-column="12" selection-end-line="262" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -36,10 +38,10 @@
       <file leaf-file-name="commonjs.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wshtml/Tica/themes/default/js/commonjs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6615385">
-              <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.75384617">
+              <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
               <folding>
-                <marker date="1519614913900" expanded="true" signature="3651:3664" placeholder="..." />
+                <marker date="1519617166465" expanded="true" signature="3651:3664" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -345,18 +347,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wshtml/Tica/order_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4210525">
-          <caret line="253" column="64" selection-start-line="253" selection-start-column="64" selection-end-line="253" selection-end-column="64" />
+        <state vertical-scroll-proportion="-15.62963">
+          <caret line="262" column="19" selection-start-line="262" selection-start-column="12" selection-end-line="262" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wshtml/Tica/themes/default/js/commonjs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6615385">
-          <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.75384617">
+          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
           <folding>
-            <marker date="1519614913900" expanded="true" signature="3651:3664" placeholder="..." />
+            <marker date="1519617166465" expanded="true" signature="3651:3664" placeholder="..." />
           </folding>
         </state>
       </provider>
