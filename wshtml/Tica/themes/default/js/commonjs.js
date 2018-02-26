@@ -60,3 +60,34 @@ window.alert = function(msg, callback) {
         callback();
     };
 };
+
+// 倒计时
+var starttime = new Date("2018/12/31 23:59:59");
+setInterval(function () {
+    var nowtime = new Date();
+    var time = starttime - nowtime;
+    var hour = parseInt(time / 1000 / 60 / 60 % 24);
+    var minute = parseInt(time / 1000 / 60 % 60);
+    var seconds = parseInt(time / 1000 % 60);
+    if(time>0){
+        if(hour<10){
+            $('#time_h').html('0'+hour);
+        }else{
+            $('#time_h').html(hour);
+        }
+        if(minute<10){
+            $('#time_m').html('0'+minute);
+        }else{
+            $('#time_m').html(minute);
+        }
+        if(seconds<10){
+            $('#time_s').html('0'+seconds);
+        }else{
+            $('#time_s').html(seconds);
+        }
+    }else{
+        $('#time_h').html('0');
+        $('#time_m').html('0');
+        $('#time_s').html('0');
+    }
+}, 1000);

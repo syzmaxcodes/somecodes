@@ -52,7 +52,7 @@
         <!-- 订单支付状态 -->
         <div class="pay_state pay_state_detail">
             <h1>等待付款</h1>
-            <p>您的订单已提交，请在<span>01</span>时<span>59</span>分<span>59</span>秒内完成支付，超时订单自动取消</p>
+            <p>您的订单已提交，请在<span id="time_h">--</span>时<span id="time_m">--</span>分<span id="time_s">--</span>秒内完成支付，超时订单自动取消</p>
         </div>
         <div class="express_info">
             <p>收货人：周杰伦</p>
@@ -254,6 +254,13 @@
                 headeropenMune.addClass('ect-icon-navMenuOpen');
             }
         }
+    </script>
+
+    <!-- 订单倒计时 -->
+    <script type="text/javascript" src="themes/default/js/commonjs.js"></script>
+    <script type="text/javascript">
+        // 订单倒计时
+        var starttime = new Date("2018/2/26 12:00:00");
     </script>
 
 </div>
