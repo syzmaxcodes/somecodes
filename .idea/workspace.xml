@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="630788da-33fa-4362-a88f-6b58cef25dee" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wshtml/Tica/themes/default/js/commonjs.js" afterPath="$PROJECT_DIR$/wshtml/Tica/themes/default/js/commonjs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wshtml/Tica/order_detail.html" afterPath="$PROJECT_DIR$/wshtml/Tica/order_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="somecodes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,23 +23,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="order_detail.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="order_detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wshtml/Tica/order_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47727272">
+            <state vertical-scroll-proportion="-4.4210525">
               <caret line="253" column="64" selection-start-line="253" selection-start-column="64" selection-end-line="253" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commonjs.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="commonjs.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wshtml/Tica/themes/default/js/commonjs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.44615385">
+              <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
               <folding>
-                <marker date="1519614169949" expanded="true" signature="3651:3664" placeholder="..." />
+                <marker date="1519614291799" expanded="true" signature="3651:3664" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -345,21 +343,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wshtml/Tica/themes/default/js/commonjs.js">
+    <entry file="file://$PROJECT_DIR$/wshtml/Tica/order_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
-          <folding>
-            <marker date="1519614169949" expanded="true" signature="3651:3664" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-4.4210525">
+          <caret line="253" column="64" selection-start-line="253" selection-start-column="64" selection-end-line="253" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wshtml/Tica/order_detail.html">
+    <entry file="file://$PROJECT_DIR$/wshtml/Tica/themes/default/js/commonjs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47727272">
-          <caret line="253" column="64" selection-start-line="253" selection-start-column="64" selection-end-line="253" selection-end-column="64" />
-          <folding />
+        <state vertical-scroll-proportion="0.44615385">
+          <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+          <folding>
+            <marker date="1519614291799" expanded="true" signature="3651:3664" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

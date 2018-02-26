@@ -86,8 +86,8 @@ setInterval(function () {
             $('#time_s').html(seconds);
         }
     }else{
-        $('#time_h').html('0');
-        $('#time_m').html('0');
-        $('#time_s').html('0');
+        $('#time_h').html('00');
+        $('#time_m').html('00');
+        $('#time_s').html('00');
     }
 }, 1000);
