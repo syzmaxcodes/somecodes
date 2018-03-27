@@ -62,24 +62,24 @@ window.alert = function(msg, callback) {
 };
 
 // 倒计时
-var endtime = new Date("2018/12/31 23:59:59");
-setInterval(function () {
-   // var nowtime = new Date();
-    var nowtime = new Date($.ajax({async: false}).getResponseHeader("Date"));  //使用服务器时间
-    var time = endtime - nowtime;
-    var hour = parseInt(time / 1000 / 60 / 60 % 24);
-    var minute = parseInt(time / 1000 / 60 % 60);
-    var seconds = parseInt(time / 1000 % 60);
-    if(time>0){
-        hour = (String(hour).length >= 2) ? hour : '0' + hour;
-        minute = (String(minute).length >= 2) ? minute : '0' + minute;
-        seconds = (String(seconds).length >= 2) ? seconds : '0' + seconds;
-        $('#time_h').html(hour);
-        $('#time_m').html(minute);
-        $('#time_s').html(seconds);
-    }else{
-        $('#time_h').html('00');
-        $('#time_m').html('00');
-        $('#time_s').html('00');
-    }
-}, 1000);
+//var endtime = new Date("2018/12/31 23:59:59");
+//setInterval(function () {
+//   // var nowtime = new Date();
+//    var nowtime = new Date($.ajax({async: false}).getResponseHeader("Date"));  //使用服务器时间
+//    var time = endtime - nowtime;
+//    var hour = parseInt(time / 1000 / 60 / 60 % 24);
+//    var minute = parseInt(time / 1000 / 60 % 60);
+//    var seconds = parseInt(time / 1000 % 60);
+//    if(time>0){
+//        hour = (String(hour).length >= 2) ? hour : '0' + hour;
+//        minute = (String(minute).length >= 2) ? minute : '0' + minute;
+//        seconds = (String(seconds).length >= 2) ? seconds : '0' + seconds;
+//        $('#time_h').html(hour);
+//        $('#time_m').html(minute);
+//        $('#time_s').html(seconds);
+//    }else{
+//        $('#time_h').html('00');
+//        $('#time_m').html('00');
+//        $('#time_s').html('00');
+//    }
+//}, 1000);
