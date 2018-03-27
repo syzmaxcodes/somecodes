@@ -215,21 +215,6 @@
     <script src="js/swiper/swiper-4.1.0.min.js"></script>
     <script src="js/common.js"></script>
     <script type="text/javascript">
-        /* 判断宽度，跳转版本 */
-        var winW = $(window).width();
-        var urlM = 'm/index.html';
-        $(function(){
-            if( winW < 800 ){
-                window.location.href = urlM;
-            }
-        });
-        $(window).resize(function(){
-            if( winW < 800 ){
-                window.location.href = urlM;
-            }
-        });
-    </script>
-    <script type="text/javascript">
         // 行业轮播滚动
         var swiper = new Swiper('.in_container', {
             slidesPerView: 5,

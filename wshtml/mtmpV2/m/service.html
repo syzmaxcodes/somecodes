@@ -114,6 +114,22 @@
             $('aside').css('right','-35%');
         }
     </script>
+    <script type="text/javascript">
+        /* 判断宽度，跳转版本 */
+        var urlPC = '../service.html';
+        $(function(){
+            var winW = $(window).width();
+            if( winW >= 800 ){
+                window.location.href = urlPC;
+            }
+        });
+        $(window).resize(function(){
+            var winW = $(window).width();
+            if( winW >= 800 ){
+                window.location.href = urlPC;
+            }
+        });
+    </script>
     <!--***************  脚本区 End ****************-->
 </body>
 </html>
