@@ -5,11 +5,11 @@
     <title>TICA管理中心</title>
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="http://www.mtangmpin.com/admin/styles/general.css" rel="stylesheet" type="text/css" />
-    <link href="http://www.mtangmpin.com/admin/styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.ticaglobal.cn/admin/styles/general.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.ticaglobal.cn/admin/styles/main.css" rel="stylesheet" type="text/css" />
     <!--<script type="text/javascript" src="http://www.mtangmpin.com/data/assets/js/transport.js"></script>-->
-    <script type="text/javascript" src="http://www.mtangmpin.com/admin/js/common.js"></script>
-    <script type="text/javascript" src="http://www.mtangmpin.com/data/assets/js/jquery.min.js" ></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/admin/js/common.js"></script>
+    <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/jquery.min.js" ></script>
 
     <!--***************  新增加样式 Start ***************-->
     <link rel="stylesheet" href="metroStyle/metroStyle.css" type="text/css">
@@ -98,6 +98,8 @@
                 </tr>
             </table>
         </div>
+        <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/calendar.php"></script>
+        <link href="http://www.ticaglobal.cn/data/assets/js/calendar/calendar.css" rel="stylesheet" type="text/css" />
         <div class="main_div">
             <table>
                 <tr>
@@ -115,7 +117,7 @@
                 <tr>
                     <td class="label" style="padding: 15px 1em;">海报预览：</td>
                     <td colspan="2" style="padding: 15px 0;">
-                        <img src="http://www.mtangmpin.com/themes/default/images/DIja_second.png" alt="" width="300"/>
+                        <img src="http://www.ticaglobal.cn/active_img/0dacdce2951029246944ee3a25dd19a7.jpg" alt="" width="300"/>
                     </td>
                 </tr>
                 <tr>
@@ -126,6 +128,23 @@
                     </td>
                     <td>
                         <i>*若未上传活动海报，则仅可链接到商城首页</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">券有效期：</td>
+                    <td colspan="2">
+                        2018-03-01 14:00:00 至 2014-03-31 18:00:00
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">可用时间：</td>
+                    <td colspan="2">
+                        <input type="text" name="start_time" maxlength="60" size="20" readonly="readonly" id="start_time_id" />
+                        <input name="start_time_btn" type="button" id="start_time_btn" onclick="return showCalendar('start_time_id', '%Y-%m-%d %H:%M', '24', false, 'start_time_btn');" value="选择" class="button"/>
+                        ~
+                        <input type="text" name="end_time" maxlength="60" size="20" readonly="readonly" id="end_time_id" />
+                        <input name="end_time_btn" type="button" id="end_time_btn" onclick="return showCalendar('end_time_id', '%Y-%m-%d %H:%M', '24', false, 'end_time_btn');" value="选择" class="button"/>
+
                     </td>
                 </tr>
             </table>
@@ -154,9 +173,9 @@
 <script type="text/javascript" src="metroStyle/js/jquery.ztree.excheck.js"></script>
 <script type="text/javascript">
     $(function(){
-        var setting = {check: {enable: true}, view:{showIcon: false}, data : {simpleData : { idKey: "id",enable : true}},key:{name: "name"}};
+        var setting = {check: {enable: true}, view:{showIcon: false}, data : {simpleData : { idKey: "cat_id",enable : true}},key:{name: "cat_name"}};
         $.ajax({
-            url: 'metroStyle/package.json',
+            url: 'metroStyle/true.json',
             type: 'get',
             dataType: 'json',
             timeout: 5000,
@@ -183,7 +202,7 @@
 
     $(document).ready(function(){    /** 这里是加载执行选中及展开 当前票券适用分类  */
         zTree = $.fn.zTree.getZTreeObj("treeDemo");
-        var parentId = [11,12,13,23];
+        var parentId = [33,55];
         var node = new Array();
         for( var i = 0; i < parentId.length; i++ ){
             node[i] = zTree.getNodeByParam("id",parentId[i],null );
