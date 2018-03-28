@@ -98,7 +98,7 @@
                 </tr>
             </table>
         </div>
-        <script type="text/javascript" src="http://www.ticaglobal.cn/data/assets/js/calendar.php"></script>
+        <script type="text/javascript" src="data/assets/js/calendar.php"></script>
         <link href="http://www.ticaglobal.cn/data/assets/js/calendar/calendar.css" rel="stylesheet" type="text/css" />
         <div class="main_div">
             <table>
@@ -133,21 +133,59 @@
                 <tr>
                     <td class="label">券有效期：</td>
                     <td colspan="2">
-                        2018-03-01 14:00:00 至 2014-03-31 18:00:00
+                        <span id="start_time">2018-03-01 14:00:00</span> 至 <span id="end_time">2014-03-31 18:00:00</span>
                     </td>
                 </tr>
                 <tr>
                     <td class="label">可用时间：</td>
                     <td colspan="2">
-                        <input type="text" name="start_time" maxlength="60" size="20" readonly="readonly" id="start_time_id" />
-                        <input name="start_time_btn" type="button" id="start_time_btn" onclick="return showCalendar('start_time_id', '%Y-%m-%d %H:%M', '24', false, 'start_time_btn');" value="选择" class="button"/>
+                        <input type="text" name="start_time" maxlength="60" size="20" id="start_time_id" />
+                        <input name="start_time_btn" type="button" id="start_time_btn" onclick="return showCalendar('start_time_id', '%Y-%m-%d %H:%M:%S', '24', false, 'start_time_btn');" value="选择" class="button"/>
                         ~
-                        <input type="text" name="end_time" maxlength="60" size="20" readonly="readonly" id="end_time_id" />
-                        <input name="end_time_btn" type="button" id="end_time_btn" onclick="return showCalendar('end_time_id', '%Y-%m-%d %H:%M', '24', false, 'end_time_btn');" value="选择" class="button"/>
-
+                        <input type="text" name="end_time" maxlength="60"  size="20"  id="end_time_id" />
+                        <input name="end_time_btn" type="button" id="end_time_btn" onclick="return showCalendar('end_time_id', '%Y-%m-%d %H:%M:%S', '24', false, 'end_time_btn');" value="选择" class="button"/>
                     </td>
                 </tr>
             </table>
+            <script type="text/javascript">
+                var start = $('#start_time').text(); // 票券开始时间
+                var end = $('#end_time').text(); // 票券结束时间
+                $(function(){
+                    $('#start_time_id').val(start);
+                    $('#end_time_id').val(end);
+
+                    timeShow()
+                });
+
+                function timeShow(){
+                    var stringStartTime_py = start;
+                    var stringEndTime_py = end;
+                    var timestampStart_py = Date.parse(new Date(stringStartTime_py));
+                    stringStartTime_py = timestampStart_py / 1000;  // 票券开始时间
+                    var timestampEnd_py = Date.parse(new Date(stringEndTime_py));
+                    stringEndTime_py = timestampEnd_py / 1000;  // 票券结束时间
+
+                    //如果可用开始小于票券开始时间
+                    $('#start_time_id').change(function(){
+                        var stringStartTime =  $('#start_time_id').val();
+                      //  var stringEndTime =  $('#end_time_btn').val();
+                        var timestampStart = Date.parse(new Date(stringStartTime));
+                        stringStartTime = timestampStart / 1000;  // 可用开始时间
+                      //  var timestampEnd = Date.parse(new Date(stringEndTime));
+                        //stringEndTime = timestampEnd / 1000;  // 可用结束时间
+
+
+                        if(stringStartTime_py>stringStartTime){
+                            alert(xx);
+                        }
+                    })
+
+
+                 //alert('开始：'+stringStartTime_py + '+结束：'+stringEndTime_py)
+                   // alert('开始：'+stringStartTime + '+结束：'+stringEndTime)
+                }
+
+            </script>
 
             <h3>选择适用票券</h3>
             <!-- json创建树形菜单 脚本在最底部 -->
