@@ -130,59 +130,141 @@
                         <i>*若未上传活动海报，则仅可链接到商城首页</i>
                     </td>
                 </tr>
+            </table>
+            <h3>设置票券可用时间</h3>
+            <table>
                 <tr>
                     <td class="label">券有效期：</td>
-                    <td colspan="2">
-                        <span id="start_time">2018-03-01 14:00:00</span> 至 <span id="end_time">2014-03-31 18:00:00</span>
+                    <td colspan="2" style="color: #888;">
+                        <span id="start_time">2018-03-01 14:00:00</span> 至 <span id="end_time">2018-03-31 18:00:00</span>
                     </td>
                 </tr>
                 <tr>
-                    <td class="label">可用时间：</td>
+                    <td colspan="3">
+                        <input type="hidden" value="" id="use_timestart"/>
+                        <input type="hidden" value="" id="use_timeend"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label" style=" vertical-align: middle" >可用时间：</td>
                     <td colspan="2">
-                        <input type="text" name="start_time" maxlength="60" size="20" id="start_time_id" />
-                        <input name="start_time_btn" type="button" id="start_time_btn" onclick="return showCalendar('start_time_id', '%Y-%m-%d %H:%M:%S', '24', false, 'start_time_btn');" value="选择" class="button"/>
+                        <input type="text"  name="start_time" readonly="readonly" maxlength="60" size="28" id="start_time_id" style="font-weight: bold; background: #eee;" />
                         ~
-                        <input type="text" name="end_time" maxlength="60"  size="20"  id="end_time_id" />
-                        <input name="end_time_btn" type="button" id="end_time_btn" onclick="return showCalendar('end_time_id', '%Y-%m-%d %H:%M:%S', '24', false, 'end_time_btn');" value="选择" class="button"/>
+                        <input type="text" name="end_time" readonly="readonly" maxlength="60"  size="28"  id="end_time_id" style="font-weight: bold;background: #eee;"/>
+                        <input name="time_edit" type="button" id="time_edit" value="修改" class="button"/>
+                        <input name="time_sure" type="button" id="time_sure"  value="确认" class="button" style="display: none;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2" valign="top">
+                        <p style="display: inline-block; width:250px; margin-top: 0; float: left; color: #f00;"><span id="startError" style="display: none;">【可用开始时间】必须在票券有效时间内！</span></p>
+                        <p style="display: inline-block; margin-top: 0; float: left;color: #f00;"><span id="endError" style="display: none;">【可用结束时间】必须在票券有效时间内！</span></p>
                     </td>
                 </tr>
             </table>
             <script type="text/javascript">
                 var start = $('#start_time').text(); // 票券开始时间
                 var end = $('#end_time').text(); // 票券结束时间
-                $(function(){
-                    $('#start_time_id').val(start);
-                    $('#end_time_id').val(end);
+                // 票券开始-结束时间是固定的，以下是转换为时间戳
+                var timestampStart_py = Date.parse(new Date(start));
+                var startTime_py = timestampStart_py / 1000;  // 票券开始时间戳
+                var timestampEnd_py = Date.parse(new Date(end));
+                var endTime_py = timestampEnd_py / 1000;  // 票券结束时间戳
 
-                    timeShow()
+                var use_timestart = $('#use_timestart').val();
+                var use_timeend = $('#use_timeend').val();
+
+                $(function(){
+                    //  可用时间未设置时
+                    if(use_timestart==''||use_timeend==''){
+                        $('#start_time_id').val(start); // 可用开始时间默认为票券开始时间
+                        $('#end_time_id').val(end);    // 可用结束时间默认为票券结束时间
+                    }else{
+                        //  可用时间已设置时
+                        $('#start_time_id').val( $('#use_timestart').val());
+                        $('#end_time_id').val( $('#use_timeend').val());
+                    }
                 });
 
-                function timeShow(){
-                    var stringStartTime_py = start;
-                    var stringEndTime_py = end;
-                    var timestampStart_py = Date.parse(new Date(stringStartTime_py));
-                    stringStartTime_py = timestampStart_py / 1000;  // 票券开始时间
-                    var timestampEnd_py = Date.parse(new Date(stringEndTime_py));
-                    stringEndTime_py = timestampEnd_py / 1000;  // 票券结束时间
+                function timeJudge(){
+                    // 可用开始时间转换为时间戳
+                    var startTime_use =  $('#start_time_id').val();
+                    var timestampStart = Date.parse(new Date(startTime_use));
+                    startTime_use = timestampStart / 1000;  // 可用开始时间
 
-                    //如果可用开始小于票券开始时间
-                    $('#start_time_id').change(function(){
-                        var stringStartTime =  $('#start_time_id').val();
-                      //  var stringEndTime =  $('#end_time_btn').val();
-                        var timestampStart = Date.parse(new Date(stringStartTime));
-                        stringStartTime = timestampStart / 1000;  // 可用开始时间
-                      //  var timestampEnd = Date.parse(new Date(stringEndTime));
-                        //stringEndTime = timestampEnd / 1000;  // 可用结束时间
+                    // 可用结束时间转换为时间戳
+                    var endTime_use =  $('#end_time_id').val();
+                    var timestampEnd = Date.parse(new Date(endTime_use));
+                    endTime_use = timestampEnd / 1000;  // 可用结束时间
+
+                    if(startTime_py > startTime_use){
+                        $('#startError').show();
+                       //  alert('【可用开始时间】必须在票券有效时间内！');
+                    }else{
+                        $('#startError').hide();
+                    }
+                    if(endTime_use > endTime_py){
+                        $('#endError').show();
+                       // alert('【可用结束时间】必须在票券有效时间内！');
+                    }else{
+                        $('#endError').hide();
+                    }
+                    if(endTime_use<=startTime_use){
+                        alert('【可用开始时间】必须小于【可用结束时间】！');
+                    }
+                    if((startTime_use>=startTime_py)&&(endTime_py>=endTime_use)&&(endTime_use>startTime_use)){
+                        $('#time_sure').hide();
+                        $('#time_edit').show();
+                        $('#start_time_id').attr("readonly","readonly");
+                        $('#end_time_id').attr("readonly","readonly");
+                        $('#start_time_id').css('background','#eee');
+                        $('#end_time_id').css('background','#eee');
+                    }
 
 
-                        if(stringStartTime_py>stringStartTime){
-                            alert(xx);
-                        }
+                  // alert('票券开始：'+startTime_py + '+可用开始：'+startTime_use)
+                  //  alert('票券结束：'+endTime_py + '+可用结束：'+endTime_use)
+                }
+
+                // 确定时判断
+                $(function(){
+                    // 确定
+                    $('#time_sure').click(function(){
+                        timeJudge();
+
+                    });
+                    // 修改
+                    $('#time_edit').click(function(){
+                        $('#time_sure').show();
+                        $(this).hide();
+                        $('#start_time_id').removeAttr("readonly");
+                        $('#end_time_id').removeAttr("readonly");
+                        $('#start_time_id').css('background','#fff');
+                        $('#end_time_id').css('background','#fff');
                     })
+                });
 
+                $('#start_time_id').click(function(){
+                    if($("#time_sure").is(":hidden")){
 
-                 //alert('开始：'+stringStartTime_py + '+结束：'+stringEndTime_py)
-                   // alert('开始：'+stringStartTime + '+结束：'+stringEndTime)
+                    }else{
+                        startTimeShow();
+                    }
+                });
+                $('#end_time_id').click(function(){
+                    if($("#time_sure").is(":hidden")){
+
+                    }else{
+                        EndTimeShow();
+                    }
+                });
+
+                function startTimeShow(){
+                    return showCalendar('start_time_id', '%Y-%m-%d %H:%M:%S', '24', false, 'start_time_id');
+                }
+                function EndTimeShow(){
+                    return showCalendar('end_time_id', '%Y-%m-%d %H:%M:%S', '24', false, 'end_time_id');
                 }
 
             </script>
